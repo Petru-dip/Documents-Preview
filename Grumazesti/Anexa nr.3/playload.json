@@ -1,0 +1,922 @@
+{
+    "beneficiaryId": "georgiana",
+    "createdAt": "2026-03-12T06:11:03.717+00:00",
+    "updatedAt": "2026-03-12T13:40:23.990+00:00",
+    "createdBy": "156",
+    "lastModifiedBy": "156",
+    "id": "3fde5fa4-1dda-11f1-8e86-43537f5621c8",
+    "category": "REQUEST_FORM",
+    "templateKey": "3fde5fa4-1dda-11f1-8e86-43537f5621c8",
+    "name": "Declarație",
+    "description": "",
+    "title": "Declarație Anexa nr.3",
+    "subTitle": "Declarație Anexa nr.3",
+    "sections": [
+        {
+            "id": "66e74c79-3ad5-4106-bbad-069d0ee2c92b",
+            "order": 0,
+            "title": "Detaliile declarației",
+            "fields": [
+                {
+                    "id": "f96afbe5-1dda-11f1-8e86-bb5acb873043",
+                    "fieldKey": "f96afbe5-1dda-11f1-8e86-bb5acb873043",
+                    "label": "Subsemnatul",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Subsemnatul",
+                    "description": "",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Subsemnatul"
+                },
+                {
+                    "id": "f96afbe6-1dda-11f1-8e86-731ea9da5077",
+                    "fieldKey": "f96afbe6-1dda-11f1-8e86-731ea9da5077",
+                    "label": "Serie carte de identitate",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Serie carte de identitate",
+                    "description": "",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 2,
+                    "minimumLength": 0,
+                    "placeHolder": "Serie carte de identitate"
+                },
+                {
+                    "id": "f96afbe7-1dda-11f1-8e86-13fdeb2e5811",
+                    "fieldKey": "f96afbe7-1dda-11f1-8e86-13fdeb2e5811",
+                    "label": "Numărul",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Numărul",
+                    "description": "",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Numărul"
+                },
+                {
+                    "id": "f96afbe8-1dda-11f1-8e86-21d8dea5f2a3",
+                    "fieldKey": "f96afbe8-1dda-11f1-8e86-21d8dea5f2a3",
+                    "label": "Eliberată de către",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Eliberată de către",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Eliberată de către"
+                },
+                {
+                    "id": "f96afbe9-1dda-11f1-8e86-d73e53d752aa",
+                    "fieldKey": "f96afbe9-1dda-11f1-8e86-d73e53d752aa",
+                    "label": "CNP",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "CNP",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 13,
+                    "minimumLength": 0,
+                    "placeHolder": "CNP"
+                },
+                {
+                    "id": "e2aa0f3a-1de8-11f1-8e86-359cfa7faf93",
+                    "fieldKey": "e2aa0f3a-1de8-11f1-8e86-359cfa7faf93",
+                    "label": "Hramul Lăcașului",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Hramul Lăcașului",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Hramul Lăcașului"
+                },
+                {
+                    "id": "e2aa0f3b-1de8-11f1-8e86-17d26758c2b7",
+                    "fieldKey": "e2aa0f3b-1de8-11f1-8e86-17d26758c2b7",
+                    "label": "Localitatea",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Localitatea",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Localitatea"
+                },
+                {
+                    "id": "e2aa0f3c-1de8-11f1-8e86-8f9464b90af4",
+                    "fieldKey": "e2aa0f3c-1de8-11f1-8e86-8f9464b90af4",
+                    "label": "Strada",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Strada",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Strada"
+                },
+                {
+                    "id": "e2aa0f3d-1de8-11f1-8e86-69457b767aa0",
+                    "fieldKey": "e2aa0f3d-1de8-11f1-8e86-69457b767aa0",
+                    "label": "Numărul",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Numărul",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Numărul"
+                },
+                {
+                    "id": "e2aa0f3e-1de8-11f1-8e86-93afca6743b1",
+                    "fieldKey": "e2aa0f3e-1de8-11f1-8e86-93afca6743b1",
+                    "label": "Județul",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Județul",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Județul"
+                },
+                {
+                    "id": "e2aa0f3f-1de8-11f1-8e86-edd95f2fb474",
+                    "fieldKey": "e2aa0f3f-1de8-11f1-8e86-edd95f2fb474",
+                    "label": "CIF",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "CIF",
+                    "description": "",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "CIF"
+                }
+            ]
+        },
+        {
+            "id": "12d5a1b7-2747-48a9-99ec-fb6c53360372",
+            "order": 1,
+            "title": "1. Date privind proprietățile imobiliare deținute de către unitatea de cult",
+            "fields": [
+                {
+                    "id": "e2aa0f45-1de8-11f1-8e86-a1e222e4dca0",
+                    "fieldKey": "e2aa0f45-1de8-11f1-8e86-a1e222e4dca0",
+                    "label": "Unitatea de cult deține în proprietate un imobil",
+                    "fieldType": "CHECKBOX",
+                    "title": "Unitatea de cult deține în proprietate un imobil",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "defaultValue": "false",
+                    "isReadOnly": false
+                },
+                {
+                    "id": "e2aa0f46-1de8-11f1-8e86-b55848c47bb6",
+                    "fieldKey": "e2aa0f46-1de8-11f1-8e86-b55848c47bb6",
+                    "label": "Suprafața",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Suprafața",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Suprafața"
+                },
+                {
+                    "id": "e2aa0f47-1de8-11f1-8e86-71aad5b5f9a4",
+                    "fieldKey": "e2aa0f47-1de8-11f1-8e86-71aad5b5f9a4",
+                    "label": "Localitatea",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Localitatea",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Localitatea"
+                },
+                {
+                    "id": "e2aa0f48-1de8-11f1-8e86-39cfd34abb85",
+                    "fieldKey": "e2aa0f48-1de8-11f1-8e86-39cfd34abb85",
+                    "label": "Județul",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Județul",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Județul"
+                },
+                {
+                    "id": "e2aa0f49-1de8-11f1-8e86-b90bf6641d7a",
+                    "fieldKey": "e2aa0f49-1de8-11f1-8e86-b90bf6641d7a",
+                    "label": "Carte funciara / Adeverință impozite și taxe",
+                    "fieldType": "FILE_UPLOAD",
+                    "title": "Carte funciara / Adeverință impozite și taxe",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "maxFileSize": 51200000,
+                    "minFileSize": 1024,
+                    "docFormats": [
+                        "TXT",
+                        "PDF",
+                        "DOC",
+                        "DOCX",
+                        "RTF",
+                        "HTML",
+                        "JPG",
+                        "JPEG",
+                        "PNG",
+                        "GIF",
+                        "BMP",
+                        "TIFF"
+                    ],
+                    "maxCount": 2,
+                    "minCount": 1
+                },
+                {
+                    "id": "e2aa0f4a-1de8-11f1-8e86-b9d423dd57b2",
+                    "fieldKey": "e2aa0f4a-1de8-11f1-8e86-b9d423dd57b2",
+                    "label": "Unitatea de cult nu deține propietăți imobiliare.",
+                    "fieldType": "CHECKBOX",
+                    "title": "Unitatea de cult nu deține proprietăți imobiliare.",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "defaultValue": "false",
+                    "isReadOnly": false
+                },
+                {
+                    "id": "e2aa0f4b-1de8-11f1-8e86-e7b30ed7fd9d",
+                    "fieldKey": "e2aa0f4b-1de8-11f1-8e86-e7b30ed7fd9d",
+                    "label": "Carte funciara / Adeverință impozite și taxe",
+                    "fieldType": "FILE_UPLOAD",
+                    "title": "Carte funciara / Adeverință impozite și taxe",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "maxFileSize": 51200000,
+                    "minFileSize": 1024,
+                    "docFormats": [
+                        "TXT",
+                        "PDF",
+                        "DOC",
+                        "DOCX",
+                        "RTF",
+                        "HTML",
+                        "JPG",
+                        "JPEG",
+                        "PNG",
+                        "GIF",
+                        "BMP",
+                        "TIFF"
+                    ],
+                    "maxCount": 2,
+                    "minCount": 1
+                }
+            ]
+        },
+        {
+            "id": "336d1abc-ea53-4e53-b6fe-a6769e51153c",
+            "order": 2,
+            "title": "2. Date privind veniturile obținute din îmchiderea, arendarea și concesionarea proprietăților.",
+            "fields": [
+                {
+                    "id": "e2aa0f4c-1de8-11f1-8e86-8faa1768debb",
+                    "fieldKey": "e2aa0f4c-1de8-11f1-8e86-8faa1768debb",
+                    "label": "Unitatea de cult obține venituri din închirierea, arendarea și concesionarea proprietăților.",
+                    "fieldType": "CHECKBOX",
+                    "title": "Unitatea de cult obține venituri din închirierea, arendarea și concesionarea proprietăților.",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "defaultValue": "false",
+                    "isReadOnly": false
+                },
+                {
+                    "id": "e2aa0f4d-1de8-11f1-8e86-3766bd2bfaa8",
+                    "fieldKey": "e2aa0f4d-1de8-11f1-8e86-3766bd2bfaa8",
+                    "label": "Unitatea de cult nu obține venituri din închirierea, arendarea și concesionarea proprietăților.",
+                    "fieldType": "CHECKBOX",
+                    "title": "Unitatea de cult nu obține venituri din închirierea, arendarea și concesionarea proprietăților.",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "defaultValue": "false",
+                    "isReadOnly": false
+                }
+            ]
+        },
+        {
+            "id": "43715797-f153-491f-91d5-116f8a9bac64",
+            "order": 3,
+            "title": "3. Unitatea de cult îndeplinește cel puțin una dintre următoarele condiții:",
+            "fields": [
+                {
+                    "id": "e2aa0f4e-1de8-11f1-8e86-0fcbac507d09",
+                    "fieldKey": "e2aa0f4e-1de8-11f1-8e86-0fcbac507d09",
+                    "label": "Credincioșii sunt, în proporție de minimum 40%, persoane în vârstă de peste 65 de ani. Anexez în acest sens extras al ultimului recensământ sau adeverința de la unitatea administrativă teritorială.",
+                    "fieldType": "CHECKBOX",
+                    "title": "Credincioșii sunt, în proporție de minimum 40%, persoane în vârstă de peste 65 de ani. ",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "defaultValue": "false",
+                    "isReadOnly": false
+                },
+                {
+                    "id": "451a6862-1de9-11f1-8e86-8f92b0e52364",
+                    "fieldKey": "451a6862-1de9-11f1-8e86-8f92b0e52364",
+                    "label": "Adeverință",
+                    "fieldType": "FILE_UPLOAD",
+                    "title": "Adeverință",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "maxFileSize": 51203072,
+                    "minFileSize": 1024,
+                    "docFormats": [
+                        "TXT",
+                        "PDF",
+                        "DOC",
+                        "DOCX",
+                        "RTF",
+                        "HTML",
+                        "JPG",
+                        "JPEG",
+                        "PNG",
+                        "GIF",
+                        "BMP",
+                        "TIFF"
+                    ],
+                    "maxCount": 1,
+                    "minCount": 1
+                },
+                {
+                    "id": "e2aa0f4f-1de8-11f1-8e86-a5f65a535c2f",
+                    "fieldKey": "e2aa0f4f-1de8-11f1-8e86-a5f65a535c2f",
+                    "label": "Parohia are până la 200 de familii sau se află situte în zone izolate, greu accesibile. Anexez în acest sens extras al ultimului recensământ sau dovada din partea Centrului Eparhial/Cultului.",
+                    "fieldType": "CHECKBOX",
+                    "title": "Parohia are până la 200 de familii sau se află situte în zone izolate, greu accesibile. ",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "defaultValue": "false",
+                    "isReadOnly": false
+                },
+                {
+                    "id": "451c6433-1de9-11f1-8e86-f1bbbc6078dd",
+                    "fieldKey": "451c6433-1de9-11f1-8e86-f1bbbc6078dd",
+                    "label": "Adeverință",
+                    "fieldType": "FILE_UPLOAD",
+                    "title": "Adeverință",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "maxFileSize": 51200000,
+                    "minFileSize": 1024,
+                    "docFormats": [
+                        "TXT",
+                        "PDF",
+                        "DOC",
+                        "DOCX",
+                        "RTF",
+                        "HTML",
+                        "JPG",
+                        "JPEG",
+                        "PNG",
+                        "GIF",
+                        "BMP",
+                        "TIFF"
+                    ],
+                    "maxCount": 1,
+                    "minCount": 1
+                },
+                {
+                    "id": "e2aa0f50-1de8-11f1-8e86-49c520f12383",
+                    "fieldKey": "e2aa0f50-1de8-11f1-8e86-49c520f12383",
+                    "label": "Nu dispun de lăcaș de cult sau de casă parohială, iar personalul clerical nu deține locuință proprietate personală în localitate. Anexez adeverință de la unitatea administrativ teritorială privind impozitele și taxele locale.",
+                    "fieldType": "CHECKBOX",
+                    "title": "Nu dispun de lăcaș de cult sau de casă parohială",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "defaultValue": "false",
+                    "isReadOnly": false
+                },
+                {
+                    "id": "451ed534-1de9-11f1-8e86-f7373987c7ac",
+                    "fieldKey": "451ed534-1de9-11f1-8e86-f7373987c7ac",
+                    "label": "Adeverință",
+                    "fieldType": "FILE_UPLOAD",
+                    "title": "Adeverință",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "maxFileSize": 5120000,
+                    "minFileSize": 1024,
+                    "docFormats": [
+                        "TXT",
+                        "PDF",
+                        "DOC",
+                        "DOCX",
+                        "RTF",
+                        "HTML",
+                        "JPG",
+                        "JPEG",
+                        "PNG",
+                        "GIF",
+                        "BMP",
+                        "TIFF"
+                    ],
+                    "maxCount": 1,
+                    "minCount": 1
+                },
+                {
+                    "id": "e2aa3661-1de8-11f1-8e86-95932cf44c2b",
+                    "fieldKey": "e2aa3661-1de8-11f1-8e86-95932cf44c2b",
+                    "label": "Parohia nu beneficiază de sprijin financiar pentru salarizarea personalului neclerical. Anexez adeverință de la unitatea administrativ teritorială",
+                    "fieldType": "CHECKBOX",
+                    "title": "Parohia nu beneficiază de sprijin financiar pentru salarizarea personalului neclerical.",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "defaultValue": "false",
+                    "isReadOnly": false
+                },
+                {
+                    "id": "45231af5-1de9-11f1-8e86-65d35fa2a296",
+                    "fieldKey": "45231af5-1de9-11f1-8e86-65d35fa2a296",
+                    "label": "Adeverință",
+                    "fieldType": "FILE_UPLOAD",
+                    "title": "Adeverință",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "maxFileSize": 51200000,
+                    "minFileSize": 1024,
+                    "docFormats": [
+                        "TXT",
+                        "PDF",
+                        "DOC",
+                        "DOCX",
+                        "RTF",
+                        "HTML",
+                        "JPG",
+                        "JPEG",
+                        "PNG",
+                        "GIF",
+                        "BMP",
+                        "TIFF"
+                    ],
+                    "maxCount": 1,
+                    "minCount": 1
+                }
+            ]
+        }
+    ],
+    "otherRequirementSection": {
+        "id": "94f64ca5-aebf-41d5-88d8-bddb60e677b5",
+        "order": 0,
+        "title": "",
+        "fields": null
+    },
+    "status": "INACTIVE",
+    "fileDetail": {
+        "id": "408a0cc6-5525-4f75-8766-5766053d3e71",
+        "filePath": "/beneficiaries/georgiana/form-templates/3fde5fa4-1dda-11f1-8e86-43537f5621c8/file-detail/template_2026-03-12_13-30-12.html",
+        "fileName": "template_2026-03-12_13-30-12.html",
+        "contentType": "text/html"
+    },
+    "headerConfig": {
+        "show": true
+    },
+    "footerConfig": {
+        "show": true
+    },
+    "variableConfigs": [
+    
+    {
+      "name": "beneficiaryName",
+      "type": "SYSTEM_FIELD",
+      "field": "BRANDING_OFFICIAL_NAME",
+      "fieldType": "BENEFICIARY_DETAILS"
+    },
+    {
+      "name": "beneficiaryAddress",
+      "type": "SYSTEM_FIELD",
+      "field": "BRANDING_ADDRESS",
+      "fieldType": "BENEFICIARY_DETAILS"
+    },
+    {
+      "name": "beneficiaryLogo",
+      "type": "SYSTEM_FIELD",
+      "field": "BRANDING_LOGO_URL",
+      "fieldType": "BENEFICIARY_DETAILS"
+    },
+    {
+      "name": "beneficiaryFiscalId",
+      "type": "SYSTEM_FIELD",
+      "field": "BRANDING_FISCAL_CODE",
+      "fieldType": "BENEFICIARY_DETAILS"
+    },
+    {
+      "name": "inputQrImage",
+      "type": "SYSTEM_FIELD",
+      "field": "INPUT_REGISTRATION_QR_CODE",
+      "fieldType": "REGISTRATION_DETAILS"
+    },
+    {
+      "name": "outputQrImage",
+      "type": "SYSTEM_FIELD",
+      "field": "OUTPUT_REGISTRATION_QR_CODE",
+      "fieldType": "REGISTRATION_DETAILS"
+    },
+    {
+      "name": "outputRegistrationSeries",
+      "type": "SYSTEM_FIELD",
+      "field": "OUTPUT_REGISTRATION_SERIES",
+      "fieldType": "REGISTRATION_DETAILS"
+    },
+    {
+      "name": "outputRegistrationNumber",
+      "type": "SYSTEM_FIELD",
+      "field": "OUTPUT_REGISTRATION_NUMBER",
+      "fieldType": "REGISTRATION_DETAILS"
+    },
+    {
+      "name": "outputRegistrationDate",
+      "type": "SYSTEM_FIELD",
+      "field": "OUTPUT_REGISTRATION_DATE",
+      "fieldType": "REGISTRATION_DETAILS"
+    },
+    {
+      "name": "inputRegistrationSeries",
+      "type": "SYSTEM_FIELD",
+      "field": "INPUT_REGISTRATION_SERIES",
+      "fieldType": "REGISTRATION_DETAILS"
+    },
+    {
+      "name": "inputRegistrationNumber",
+      "type": "SYSTEM_FIELD",
+      "field": "INPUT_REGISTRATION_NUMBER",
+      "fieldType": "REGISTRATION_DETAILS"
+    },
+    {
+      "name": "inputRegistrationDate",
+      "type": "SYSTEM_FIELD",
+      "field": "INPUT_REGISTRATION_DATE",
+      "fieldType": "REGISTRATION_DETAILS"
+    },
+    {
+      "name": "registeredByDepartment",
+      "type": "SYSTEM_FIELD",
+      "field": "CREATED_BY_DEPARTMENT_NAME",
+      "fieldType": "AUDIT_FIELDS"
+    },
+    {
+      "name": "declarant_nume",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "f96afbe5-1dda-11f1-8e86-bb5acb873043",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "declarant_seria",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "f96afbe6-1dda-11f1-8e86-731ea9da5077",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "declarant_nr_act",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "f96afbe7-1dda-11f1-8e86-13fdeb2e5811",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "declarant_eliberat_de",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "f96afbe8-1dda-11f1-8e86-21d8dea5f2a3",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "declarant_cnp",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "f96afbe9-1dda-11f1-8e86-d73e53d752aa",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "hramul",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f3a-1de8-11f1-8e86-359cfa7faf93",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "localitatea",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f3b-1de8-11f1-8e86-17d26758c2b7",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "strada",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f3c-1de8-11f1-8e86-8f9464b90af4",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "numar",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f3d-1de8-11f1-8e86-69457b767aa0",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "judetul",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f3e-1de8-11f1-8e86-93afca6743b1",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "cif",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f3f-1de8-11f1-8e86-edd95f2fb474",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "sect1_detine_proprietate",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f45-1de8-11f1-8e86-a1e222e4dca0",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "sect1_suprafata",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f46-1de8-11f1-8e86-b55848c47bb6",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "sect1_localitate",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f47-1de8-11f1-8e86-71aad5b5f9a4",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "sect1_judet",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f48-1de8-11f1-8e86-39cfd34abb85",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "sect1_nu_detine_proprietate",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f4a-1de8-11f1-8e86-b9d423dd57b2",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "sect2_obtine_venituri",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f4c-1de8-11f1-8e86-8faa1768debb",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "sect2_nu_obtine_venituri",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f4d-1de8-11f1-8e86-3766bd2bfaa8",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "sect3_credinciosi_40pct",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f4e-1de8-11f1-8e86-0fcbac507d09",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "sect3_parohia_200_familii",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f4f-1de8-11f1-8e86-a5f65a535c2f",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "sect3_nu_dispun_lacas",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa0f50-1de8-11f1-8e86-49c520f12383",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    },
+    {
+      "name": "sect3_nu_beneficiaza_sprijin",
+      "type": "TEMPLATE_FIELD",
+      "fieldId": "e2aa3661-1de8-11f1-8e86-95932cf44c2b",
+      "property": "VALUE",
+      "sourceFormTemplateId": "3fde5fa4-1dda-11f1-8e86-43537f5621c8"
+    }
+    ],
+
+    "editable": true
+}

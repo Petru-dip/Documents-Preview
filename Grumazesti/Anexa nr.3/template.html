@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="ro" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cerere-declarație pentru drepturi de asistență socială</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Geologica, Arial, sans-serif;
+        background: #fff;
+        color: #3f498b;
+        font-size: 12px;
+        line-height: 1.4;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .container {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .document-page {
+        width: 100%;
+        min-height: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 0 5px;
+      }
+      .doc-header {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(15, 14, 37, 0.1);
+        padding-bottom: 10px;
+        flex-shrink: 0;
+      }
+      .emblem {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .emblem svg {
+        width: 24px;
+        height: 24px;
+      }
+      .form-id {
+        padding: 4px;
+        border-left: 1px solid rgba(15, 14, 37, 0.1);
+      }
+      .form-id p {
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 0.5px;
+        color: #bfc0d3;
+        font-weight: 500;
+      }
+      .doc-content {
+        padding: 8px 0;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .doc-title {
+        text-align: center;
+        padding: 6px 0;
+        margin-bottom: 10px;
+      }
+      .doc-title h1 {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #3f498b;
+        margin: 0;
+        font-style: italic;
+      }
+      .doc-title p {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 18px;
+        color: #3f498b;
+        margin: 0;
+        font-style: italic;
+      }
+      .form-row {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 6px;
+      }
+      .form-row > * {
+        margin-right: 6px;
+      }
+      .form-row > :last-child {
+        margin-right: 0;
+      }
+      .field-line {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+      }
+      .field-label {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14px;
+        color: #3f498b;
+        white-space: nowrap;
+        margin-right: 4px;
+      }
+      .field-input {
+        display: flex;
+        align-items: center;
+        padding: 2px 6px 2px 5px;
+        background: #eff0f4;
+        border-radius: 6px;
+        min-height: 22px;
+        flex: 1;
+        min-width: 0;
+      }
+      .field-input .value {
+        font-family: "Courier New", monospace;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 0.4px;
+        color: #5e6191;
+        flex: 1;
+        min-width: 0;
+      }
+      .checkbox-row {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 3px;
+      }
+      .checkbox-icon {
+        width: 16px;
+        height: 16px;
+        border: 1.5px solid #3f498b;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background: 0 0;
+        margin-right: 4px;
+      }
+      .checkbox-icon.checked {
+        background: #3f498b;
+      }
+      .checkbox-icon.indeterminate {
+        background: #3f498b;
+      }
+      .checkbox-icon.indeterminate::after {
+        content: "";
+        width: 8px;
+        height: 2px;
+        background: #fff;
+        border-radius: 1px;
+      }
+      .checkbox-icon svg {
+        width: 10px;
+        height: 10px;
+      }
+      .radio-icon {
+        width: 16px;
+        height: 16px;
+        border: 1.5px solid #3f498b;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background: 0 0;
+        margin-right: 4px;
+      }
+      .radio-icon.checked {
+        border-color: #3f498b;
+      }
+      .radio-icon.checked::after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: #3f498b;
+        border-radius: 50%;
+      }
+      .checkbox-label {
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 14px;
+        color: #5e6191;
+      }
+      .child-section {
+        border: 1px dashed #bfc0d3;
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 6px;
+        page-break-inside: avoid;
+      }
+      .child-header {
+        font-size: 11px;
+        font-weight: 500;
+        color: #3f498b;
+        margin-right: 6px;
+      }
+      .doc-footer {
+        display: flex;
+        flex-direction: column;
+        padding: 6px 4px 4px 4px;
+        background: #fff;
+        border-top: 1px solid rgba(15, 14, 37, 0.1);
+        margin-top: auto;
+        flex-shrink: 0;
+      }
+      .footer-notes {
+        flex: 1;
+        font-size: 7px;
+        font-weight: 300;
+        line-height: 9px;
+        color: #5e6191;
+      }
+      .page-number {
+        font-size: 7px;
+        line-height: 9px;
+        color: #bfc0d3;
+        font-weight: 300;
+        margin-left: 8px;
+      }
+      .note {
+        font-size: 9px;
+        color: #5e6191;
+        font-style: italic;
+        margin-top: 4px;
+      }
+      .inline-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+      }
+      .mt4 {
+        margin-top: 3px;
+      }
+      .mt8 {
+        margin-top: 6px;
+      }
+      .mt12 {
+        margin-top: 10px;
+      }
+      .mb0 {
+        margin-bottom: 0;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .flexauto {
+        flex: 0 0 auto;
+      }
+      .w40 {
+        min-width: 36px;
+        flex: none;
+      }
+      .w50 {
+        min-width: 46px;
+        flex: none;
+      }
+      .w80 {
+        min-width: 74px;
+        flex: none;
+      }
+      .w100 {
+        min-width: 94px;
+        flex: none;
+      }
+      .w120 {
+        min-width: 114px;
+        flex: none;
+      }
+      .w150 {
+        min-width: 140px;
+        flex: none;
+      }
+      .w180 {
+        min-width: 170px;
+        flex: none;
+      }
+      .cap-title {
+        font-size: 11px;
+        font-weight: 400;
+        font-style: italic;
+        color: #3f498b;
+        margin-bottom: 6px;
+        text-decoration: underline;
+      }
+      .section-label {
+        font-size: 11px;
+        font-weight: 500;
+        font-style: italic;
+        color: #3f498b;
+        margin-bottom: 6px;
+        text-decoration: underline;
+      }
+      .nested-indent {
+        margin-left: 20px;
+      }
+      .doc-subheader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4px 0;
+        margin-bottom: 6px;
+        flex-shrink: 0;
+      }
+      .reg-info {
+        display: flex;
+        align-items: flex-start;
+      }
+      .qr-img {
+        width: 80px;
+        align-items: center;
+        justify-content: center;
+        object-fit: contain;
+      }
+      .reg-details {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        max-height: 70px;
+      }
+      .chips-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+      }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        padding: 3px 8px 3px 6px;
+        background: #eff0f4;
+        border-radius: 8px;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0.5px;
+        gap: 5px;
+      }
+      .chip > p > .series {
+        text-transform: uppercase;
+      }
+      .chip.output {
+        background: #f69785;
+        color: #fff;
+      }
+      .chip.input {
+        background: #5e6191;
+        color: #fff;
+      }
+      .chip.output > img {
+        rotate: 180deg;
+      }
+      .chip.dept {
+        text-transform: uppercase;
+      }
+      .chip-icon {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        margin-right: 4px;
+      }
+      .reg-date {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 14px;
+      }
+      .avoid-break {
+        page-break-inside: avoid;
+      }
+      .page-break-before {
+        break-before: page;
+        page-break-before: always;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <article class="document-page">
+        <header
+          class="doc-header"
+          th:if="${beneficiaryName != null and beneficiaryName != ''}"
+        >
+          <div
+            class=""
+            th:if="${beneficiaryLogo != null and beneficiaryLogo != ''}"
+          >
+            <img
+              th:src="${beneficiaryLogo}"
+              alt="Logo"
+              style="max-height: 32px; max-width: 100px; object-fit: contain"
+            />
+          </div>
+          <div
+            class="emblem"
+            th:if="${beneficiaryLogo == null or beneficiaryLogo == ''}"
+            style="
+              width: 40px;
+              height: 40px;
+              border-radius: 5px;
+              background: #3f498b;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <span
+              style="color: #fff; font-size: 30px; font-weight: 700"
+              th:text="${#strings.toUpperCase(#strings.substring(beneficiaryName, 0, 1))}"
+            ></span>
+          </div>
+          <div style="flex: 1"></div>
+          <div style="text-align: right">
+            <p
+              style="
+                font-size: 10px;
+                font-weight: 700;
+                color: #3f498b;
+                text-transform: capitalize;
+                line-height: 15px;
+              "
+              th:text="${beneficiaryName}"
+            ></p>
+            <p
+              th:if="${beneficiaryAddress != null and beneficiaryAddress != ''}"
+              style="
+                font-size: 9px;
+                font-weight: 400;
+                color: #888;
+                line-height: 15px;
+              "
+              th:text="${beneficiaryAddress}"
+            ></p>
+            <p
+              th:if="${beneficiaryFiscalId != null and beneficiaryFiscalId != ''}"
+              style="
+                font-size: 9px;
+                font-weight: 400;
+                color: #888;
+                line-height: 15px;
+              "
+              th:text="'Cod de înregistrare fiscală: ' + ${beneficiaryFiscalId}"
+            ></p>
+          </div>
+        </header>
+        <div
+          class="doc-subheader"
+          th:if="${(inputRegistrationNumber != null and inputRegistrationNumber != '') or (outputRegistrationNumber != null and outputRegistrationNumber != '') or (registeredByDepartment != null and registeredByDepartment != '')}"
+        >
+          <div class="reg-details">
+            <img
+              th:if="${inputQrImage != null and inputQrImage != '' and inputQrImage != 'placeholder'}"
+              th:src="'data:image/png;base64,' + ${inputQrImage}"
+              class="qr-img"
+              alt="QR"
+            />
+            <img
+              th:if="${(inputQrImage == null or inputQrImage == '' or inputQrImage == 'placeholder') and outputQrImage != null and outputQrImage != '' and outputQrImage != 'placeholder'}"
+              th:src="'data:image/png;base64,' + ${outputQrImage}"
+              class="qr-img"
+              alt="QR"
+            />
+            <img
+              th:if="${(inputQrImage == null or inputQrImage == '' or inputQrImage == 'placeholder') and (outputQrImage == null or outputQrImage == '' or outputQrImage == 'placeholder')}"
+              class="qr-img"
+              alt="QR"
+              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjUwMCIgaGVpZ2h0PSI1MDAiIHZpZXdCb3g9IjAgMCA1MDAgNTAwIj48ZyB0cmFuc2Zvcm09InNjYWxlKDE2LjEyOSkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEsMSkiPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuNSwzLjUpIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0tMy41IC0zLjVMMy41IC0zLjVMMy41IDMuNUwtMy41IDMuNVpNLTIuNSAtMi41TC0yLjUgMi41TDIuNSAyLjVMMi41IC0yLjVaIiBmaWxsPSIjMzIzYTZmIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNLTEuNSAtMS41TDEuNSAtMS41TDEuNSAxLjVMLTEuNSAxLjVaIiBmaWxsPSIjMzIzYTZmIi8+PC9nPjwvZz48Zz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNS41LDMuNSkiPjxnIHRyYW5zZm9ybT0icm90YXRlKDkwKSI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNLTMuNSAtMy41TDMuNSAtMy41TDMuNSAzLjVMLTMuNSAzLjVaTS0yLjUgLTIuNUwtMi41IDIuNUwyLjUgMi41TDIuNSAtMi41WiIgZmlsbD0iIzMyM2E2ZiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTS0xLjUgLTEuNUwxLjUgLTEuNUwxLjUgMS41TC0xLjUgMS41WiIgZmlsbD0iIzMyM2E2ZiIvPjwvZz48L2c+PC9nPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuNSwyNS41KSI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoLTkwKSI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNLTMuNSAtMy41TDMuNSAtMy41TDMuNSAzLjVMLTMuNSAzLjVaTS0yLjUgLTIuNUwtMi41IDIuNUwyLjUgMi41TDIuNSAtMi41WiIgZmlsbD0iIzMyM2E2ZiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTS0xLjUgLTEuNUwxLjUgLTEuNUwxLjUgMS41TC0xLjUgMS41WiIgZmlsbD0iIzMyM2E2ZiIvPjwvZz48L2c+PC9nPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTggMEw4IDJMMTAgMkwxMCAzTDEyIDNMMTIgMUwxMyAxTDEzIDBMMTEgMEwxMSAyTDEwIDJMMTAgMUw5IDFMOSAwWk0xNSAwTDE1IDFMMTQgMUwxNCAyTDEzIDJMMTMgM0wxNiAzTDE2IDRMMTcgNEwxNyA1TDE4IDVMMTggN0wxOSA3TDE5IDlMMTggOUwxOCA4TDE2IDhMMTYgOUwxNSA5TDE1IDVMMTQgNUwxNCA0TDEzIDRMMTMgNUwxNCA1TDE0IDdMMTMgN0wxMyA2TDEyIDZMMTIgNUwxMSA1TDExIDZMMTAgNkwxMCA0TDkgNEw5IDNMOCAzTDggNEw5IDRMOSA2TDggNkw4IDhMNSA4TDUgMTBMMiAxMEwyIDlMNCA5TDQgOEwyIDhMMiA5TDEgOUwxIDhMMCA4TDAgMTBMMSAxMEwxIDExTDAgMTFMMCAxM0wxIDEzTDEgMTRMMyAxNEwzIDE1TDQgMTVMNCAxNkw1IDE2TDUgMTdMNyAxN0w3IDE4TDYgMThMNiAxOUw1IDE5TDUgMThMMiAxOEwyIDE3TDMgMTdMMyAxNkwyIDE2TDIgMTdMMSAxN0wxIDE4TDAgMThMMCAxOUwxIDE5TDEgMThMMiAxOEwyIDE5TDMgMTlMMyAyMUw3IDIxTDcgMjBMNiAyMEw2IDE5TDggMTlMOCAxN0w3IDE3TDcgMTZMOCAxNkw4IDE1TDkgMTVMOSAxNkwxMCAxNkwxMCAxN0w5IDE3TDkgMTlMMTAgMTlMMTAgMjBMOSAyMEw5IDIxTDggMjFMOCAyNEwxMCAyNEwxMCAyNUw4IDI1TDggMjdMOSAyN0w5IDI4TDggMjhMOCAyOUw5IDI5TDkgMjhMMTAgMjhMMTAgMjlMMTEgMjlMMTEgMjhMMTIgMjhMMTIgMjlMMTYgMjlMMTYgMjhMMTcgMjhMMTcgMjlMMTggMjlMMTggMjhMMTkgMjhMMTkgMjlMMjEgMjlMMjEgMjhMMTkgMjhMMTkgMjdMMjAgMjdMMjAgMjZMMTkgMjZMMTkgMjdMMTggMjdMMTggMjhMMTcgMjhMMTcgMjZMMTggMjZMMTggMjVMMjEgMjVMMjEgMjdMMjUgMjdMMjUgMjlMMjYgMjlMMjYgMjhMMjcgMjhMMjcgMjlMMjggMjlMMjggMjhMMjkgMjhMMjkgMjZMMjggMjZMMjggMjVMMjkgMjVMMjkgMjRMMjcgMjRMMjcgMjNMMjggMjNMMjggMjFMMjkgMjFMMjkgMjBMMjggMjBMMjggMTlMMjkgMTlMMjkgMThMMjggMThMMjggMTZMMjkgMTZMMjkgMTVMMjcgMTVMMjcgMTNMMjUgMTNMMjUgMTRMMjQgMTRMMjQgMTFMMjYgMTFMMjYgOEwyNSA4TDI1IDlMMjQgOUwyNCAxMEwyMyAxMEwyMyAxMkwyMiAxMkwyMiAxNEwyMSAxNEwyMSAxMUwyMiAxMUwyMiAxMEwyMSAxMEwyMSA4TDIwIDhMMjAgN0wyMSA3TDIxIDZMMjAgNkwyMCA1TDE5IDVMMTkgMkwyMSAyTDIxIDBMMTkgMEwxOSAxTDE4IDFMMTggM0wxNiAzTDE2IDFMMTcgMUwxNyAwWk0yMCAzTDIwIDRMMjEgNEwyMSAzWk05IDZMOSA3TDEwIDdMMTAgOEw4IDhMOCAxMUw5IDExTDkgMTNMOCAxM0w4IDE0TDcgMTRMNyAxM0w2IDEzTDYgMTRMNSAxNEw1IDEzTDQgMTNMNCAxMkw3IDEyTDcgMTFMNiAxMUw2IDEwTDcgMTBMNyA5TDYgOUw2IDEwTDUgMTBMNSAxMUw0IDExTDQgMTJMMyAxMkwzIDE0TDQgMTRMNCAxNUw1IDE1TDUgMTZMNyAxNkw3IDE1TDggMTVMOCAxNEw5IDE0TDkgMTVMMTAgMTVMMTAgMTZMMTEgMTZMMTEgMTVMMTIgMTVMMTIgMTdMMTAgMTdMMTAgMTlMMTEgMTlMMTEgMjBMMTIgMjBMMTIgMjFMMTMgMjFMMTMgMjBMMTQgMjBMMTQgMjFMMTUgMjFMMTUgMTlMMTcgMTlMMTcgMjBMMTYgMjBMMTYgMjJMMTQgMjJMMTQgMjNMMTIgMjNMMTIgMjJMMTEgMjJMMTEgMjNMMTAgMjNMMTAgMjRMMTIgMjRMMTIgMjVMMTQgMjVMMTQgMjRMMTYgMjRMMTYgMjVMMTUgMjVMMTUgMjZMMTQgMjZMMTQgMjdMMTMgMjdMMTMgMjZMMTIgMjZMMTIgMjdMMTMgMjdMMTMgMjhMMTQgMjhMMTQgMjdMMTUgMjdMMTUgMjhMMTYgMjhMMTYgMjdMMTUgMjdMMTUgMjZMMTYgMjZMMTYgMjVMMTggMjVMMTggMjRMMTYgMjRMMTYgMjJMMTcgMjJMMTcgMjNMMTkgMjNMMTkgMjRMMjAgMjRMMjAgMjNMMTkgMjNMMTkgMjJMMjAgMjJMMjAgMjFMMTcgMjFMMTcgMjBMMTkgMjBMMTkgMTlMMjAgMTlMMjAgMjBMMjIgMjBMMjIgMTlMMjMgMTlMMjMgMjBMMjUgMjBMMjUgMjJMMjYgMjJMMjYgMjNMMjcgMjNMMjcgMjFMMjggMjFMMjggMjBMMjcgMjBMMjcgMjFMMjYgMjFMMjYgMTlMMjUgMTlMMjUgMThMMjcgMThMMjcgMTdMMjYgMTdMMjYgMTZMMjcgMTZMMjcgMTVMMjYgMTVMMjYgMTRMMjUgMTRMMjUgMTdMMjQgMTdMMjQgMTZMMjMgMTZMMjMgMTdMMjAgMTdMMjAgMTZMMTkgMTZMMTkgMTVMMTggMTVMMTggMTRMMjAgMTRMMjAgMTVMMjEgMTVMMjEgMTRMMjAgMTRMMjAgMTBMMTggMTBMMTggOUwxNyA5TDE3IDEwTDE2IDEwTDE2IDEyTDEzIDEyTDEzIDExTDE0IDExTDE0IDEwTDE1IDEwTDE1IDlMMTEgOUwxMSA4TDEyIDhMMTIgNkwxMSA2TDExIDdMMTAgN0wxMCA2Wk0xNiA2TDE2IDdMMTcgN0wxNyA2Wk0xOSA2TDE5IDdMMjAgN0wyMCA2Wk0yMiA4TDIyIDlMMjMgOUwyMyA4Wk0yNyA4TDI3IDEyTDI4IDEyTDI4IDlMMjkgOUwyOSA4Wk0xMCA5TDEwIDExTDEzIDExTDEzIDEwTDExIDEwTDExIDlaTTEgMTFMMSAxM0wyIDEzTDIgMTFaTTE4IDExTDE4IDEyTDE5IDEyTDE5IDExWk0xMCAxMkwxMCAxM0w5IDEzTDkgMTRMMTAgMTRMMTAgMTVMMTEgMTVMMTEgMTRMMTIgMTRMMTIgMTVMMTMgMTVMMTMgMTZMMTQgMTZMMTQgMTVMMTUgMTVMMTUgMTZMMTYgMTZMMTYgMTVMMTUgMTVMMTUgMTRMMTQgMTRMMTQgMTNMMTMgMTNMMTMgMTJMMTIgMTJMMTIgMTNMMTEgMTNMMTEgMTJaTTE2IDEyTDE2IDEzTDE3IDEzTDE3IDE0TDE4IDE0TDE4IDEzTDE3IDEzTDE3IDEyWk02IDE0TDYgMTVMNyAxNUw3IDE0Wk0xMyAxNEwxMyAxNUwxNCAxNUwxNCAxNFpNMjMgMTRMMjMgMTVMMjQgMTVMMjQgMTRaTTE3IDE2TDE3IDE3TDE4IDE3TDE4IDE4TDIwIDE4TDIwIDE5TDIxIDE5TDIxIDE4TDIwIDE4TDIwIDE3TDE5IDE3TDE5IDE2Wk0xMiAxN0wxMiAxOEwxNCAxOEwxNCAxN1pNMjMgMThMMjMgMTlMMjQgMTlMMjQgMThaTTQgMTlMNCAyMEw1IDIwTDUgMTlaTTEgMjBMMSAyMUwyIDIxTDIgMjBaTTkgMjFMOSAyMkwxMCAyMkwxMCAyMVpNMjEgMjFMMjEgMjRMMjQgMjRMMjQgMjFaTTIyIDIyTDIyIDIzTDIzIDIzTDIzIDIyWk0yNSAyNEwyNSAyNkwyNiAyNkwyNiAyNFpNMjIgMjVMMjIgMjZMMjQgMjZMMjQgMjVaTTEwIDI2TDEwIDI4TDExIDI4TDExIDI2Wk0yNyAyNkwyNyAyOEwyOCAyOEwyOCAyNlpNMjIgMjhMMjIgMjlMMjQgMjlMMjQgMjhaIiBmaWxsPSIjMzIzYTZmIi8+PC9nPjwvZz48L3N2Zz4K"
+            />
+            <div class="chips-container">
+              <th:block
+                th:if="${inputRegistrationNumber != null and inputRegistrationNumber != ''}"
+              >
+                <div class="chip input">
+                  <img
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0Ljk2MjkgNi43NDk4QzE0LjU4NjEgMi45NjE2IDExLjM4NjggLTEuNjk4OThlLTA3IDcuNSAwQzMuMzYgMS44MDk2NWUtMDcgMCAzLjM2IDAgNy41QzAgMTEuNjQgMy4zNiAxNSA3LjUgMTVDMTEuMzg3IDE1IDE0LjU4NjQgMTIuMDM4MiAxNC45NjI5IDguMjQ5NzlINi42MjI4NUw4Ljc4Mjg1IDEwLjQwOThDOS4wNzUzNSAxMC43MDIzIDkuMDc1MzUgMTEuMTgyMyA4Ljc4Mjg1IDExLjQ3NDhDOC40OTAzNSAxMS43NjczIDguMDE3ODUgMTEuNzY3MyA3LjcyNTM1IDExLjQ3NDhMNC4yODI4NSA4LjAzMjNDMy45OTAzNSA3LjczOTc5IDMuOTkwMzUgNy4yNjcyOSA0LjI4Mjg1IDYuOTc0NzlMNy43MTc4NSAzLjUyNDhDOC4wMTAzNSAzLjIzMjI5IDguNDgyODUgMy4yMzIyOSA4Ljc3NTM1IDMuNTI0NzlDOS4wNjc4NSAzLjgxNzI5IDkuMDY3ODUgNC4yODk4IDguNzc1MzUgNC41ODIzTDYuNjIyODUgNi43NDk4SDE0Ljk2MjlaIiBmaWxsPSIjZWZmMGY0Ii8+Cjwvc3ZnPgo="
+                  />
+                  <p>
+                    <span
+                      class="series"
+                      th:text="${inputRegistrationSeries} ?: ''"
+                    ></span
+                    ><span th:text="${inputRegistrationNumber}"></span>
+                  </p>
+                </div>
+                <p
+                  class="reg-date"
+                  th:text="${inputRegistrationDate} ?: ''"
+                ></p>
+              </th:block>
+              <th:block
+                th:if="${outputRegistrationNumber != null and outputRegistrationNumber != ''}"
+              >
+                <span class="chip output">
+                  <img
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0Ljk2MjkgNi43NDk4QzE0LjU4NjEgMi45NjE2IDExLjM4NjggLTEuNjk4OThlLTA3IDcuNSAwQzMuMzYgMS44MDk2NWUtMDcgMCAzLjM2IDAgNy41QzAgMTEuNjQgMy4zNiAxNSA3LjUgMTVDMTEuMzg3IDE1IDE0LjU4NjQgMTIuMDM4MiAxNC45NjI5IDguMjQ5NzlINi42MjI4NUw4Ljc4Mjg1IDEwLjQwOThDOS4wNzUzNSAxMC43MDIzIDkuMDc1MzUgMTEuMTgyMyA4Ljc4Mjg1IDExLjQ3NDhDOC40OTAzNSAxMS43NjczIDguMDE3ODUgMTEuNzY3MyA3LjcyNTM1IDExLjQ3NDhMNC4yODI4NSA4LjAzMjNDMy45OTAzNSA3LjczOTc5IDMuOTkwMzUgNy4yNjcyOSA0LjI4Mjg1IDYuOTc0NzlMNy43MTc4NSAzLjUyNDhDOC4wMTAzNSAzLjIzMjI5IDguNDgyODUgMy4yMzIyOSA4Ljc3NTM1IDMuNTI0NzlDOS4wNjc4NSAzLjgxNzI5IDkuMDY3ODUgNC4yODk4IDguNzc1MzUgNC41ODIzTDYuNjIyODUgNi43NDk4SDE0Ljk2MjlaIiBmaWxsPSIjZWZmMGY0Ii8+Cjwvc3ZnPgo="
+                  />
+                  <p>
+                    <span
+                      class="series"
+                      th:text="${outputRegistrationSeries} ?: ''"
+                    ></span
+                    ><span th:text="${outputRegistrationNumber}"></span>
+                  </p>
+                </span>
+                <p
+                  class="reg-date"
+                  th:text="${outputRegistrationDate} ?: ''"
+                ></p>
+              </th:block>
+            </div>
+          </div>
+          <span
+            class="chip dept"
+            th:if="${registeredByDepartment != null and registeredByDepartment != ''}"
+            th:text="${registeredByDepartment}"
+          ></span>
+        </div>
+        <!-- Anexa nr.3 label -->
+          <p style="text-align: right; font-size: 10px; font-weight: 600; color: #3f498b; margin-bottom: 6px;">
+            Anexa nr.3
+          </p>
+        <div class="doc-content">
+          <div class="doc-title">
+            <h1>DECLARAȚIE</h1>
+          </div>
+        <div class="doc-content">
+          <div class="form-row">
+              <div class="field-line flex1 mb0">
+                <span class="field-label">Subsemnatul,</span>
+                <div class="field-input">
+                  <span class="value" th:text="${declarant_nume} ?: ''"></span>
+                </div>
+                <span class="field-label">, posesor al buletinului/ cărții de identitate seria</span>
+                <div class="field-input w40">
+                  <span class="value" th:text="${declarant_seria} ?: ''"></span>
+                </div>
+                <span class="field-label">, numărul </span>
+                <div class="field-input w80">
+                  <span class="value" th:text="${declarant_nr_act} ?: ''"></span>
+                </div>
+                <span class="field-label">, eliberat/ă de către  </span>
+                <div class="field-input w120">
+                  <span class="value" th:text="${declarant_eliberat_de} ?: ''"></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field-line flex1 mb0">
+                <span class="field-label">CNP,</span>
+                <div class="field-input w150">
+                  <span class="value" th:text="${declarant_cnp} ?: ''"></span>
+                </div>
+                <span class="field-label">, personal clerical care își desfășoară activitatea în cadrul parohiei/unității de cult cu hramul(dacă este cazul) </span>
+                <div class="field-input w120">
+                  <span class="value" th:text="${hramul} ?: ''"></span>
+                </div>
+                <span class="field-label">, din localitatea </span>
+                <div class="field-input ">
+                  <span class="value" th:text="${localitatea} ?: ''"></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field-line flex1 mb0">
+                <span class="field-label">strada</span>
+                <div class="field-input">
+                  <span class="value" th:text="${strada} ?: ''"></span>
+                </div>
+                <span class="field-label">, numărul </span>
+                <div class="field-input w40">
+                  <span class="value" th:text="${numar} ?: ''"></span>
+                </div>
+                <span class="field-label">, județul/sectorul </span>
+                <div class="field-input w150">
+                  <span class="value" th:text="${judetul} ?: ''"></span>
+                </div>
+                <span class="field-label">, având CIF </span>
+                <div class="field-input w150">
+                  <span class="value" th:text="${cif} ?: ''"></span>
+                </div>,
+              </div>
+            </div>
+            <div class="form-row">
+                <span class="field-label">cunoscând prevederile din Codul penal privind falsul în declarații, îmi asum pe propria răspundere următoarele:</span>
+            </div>
+           <br>
+
+          <p class="section-title">I. Date privind proprietățile imobiliare deținute de către unitatea de cult:</p>
+
+          <div class="checkbox-row" style="margin-bottom: 4px;">
+            <span
+                class="checkbox-icon"
+                th:classappend="${sect1_detine_proprietate == true or sect1_detine_proprietate == 'true' ? 'checked' : ''}"
+              >
+                <svg
+                  th:if="${sect1_detine_proprietate == true or sect1_detine_proprietate == 'true'}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M2 6l3 3 5-5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            <div style="flex: 1; min-width: 0;">
+              <div class="form-row mb0">
+                <div class="field-line flex1 mb0">
+                  <span class="field-label">Unitatea de cult deține în proprietate imobilul (clădire/teren) în suprafață de</span>
+                  <div class="field-input w150">
+                    <span class="value" th:text="${sect1_suprafata} ?: ''"></span>
+                  </div>
+                  <span class="field-label">, situat în localitatea</span>
+                  <div class="field-input w150">
+                    <span class="value" th:text="${sect1_localitate} ?: ''"></span>
+                  </div>
+                  <span class="field-label">, județul</span>
+                  <div class="field-input w150">
+                    <span class="value" th:text="${sect1_judet} ?: ''"></span>
+                  </div>.
+                </div>
+              </div>
+              <span class="checkbox-label">Anexez extras de carte funciară/adeverință de la unitatea administrativ teritorială privind impozitele și taxele locale (Primărie, Consiliul Local/ General).</span>
+            </div>
+          </div>
+          <div class="checkbox-row" style="margin-bottom: 4px;">
+            <span
+                class="checkbox-icon"
+                th:classappend="${sect1_nu_detine_proprietate == true or sect1_nu_detine_proprietate == 'true' ? 'checked' : ''}"
+              >
+                <svg
+                  th:if="${sect1_nu_detine_proprietate == true or sect1_nu_detine_proprietate == 'true'}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M2 6l3 3 5-5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            <div style="flex: 1; min-width: 0;">
+              <div class="form-row mb0">
+                <div class="field-line flex1 mb0">
+                  <span class="field-label">Unitatea de cult nu deține proprietăți imobiliare. Anexez adeverință de la unitatea administrativ teritorială privind impozitele și taxele locale (Primărie, Consiliul Local/ General).</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <p class="section-title mt8">II. Date privind veniturile obținute din închirierea, arendarea și concesionarea proprietăților:</p>
+
+          <div class="checkbox-row" style="margin-bottom: 4px;">
+            <span
+                class="checkbox-icon"
+                th:classappend="${sect2_obtine_venituri == true or sect2_obtine_venituri == 'true' ? 'checked' : ''}"
+              >
+                <svg
+                  th:if="${sect2_obtine_venituri == true or sect2_obtine_venituri == 'true'}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M2 6l3 3 5-5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            <div style="flex: 1; min-width: 0;">
+              <div class="form-row mb0">
+                <div class="field-line flex1 mb0">
+                  <span class="field-label"> Unitatea de cult obține venituri din închirierea, arendarea și concesionarea proprietăților.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="checkbox-row" style="margin-bottom: 4px;">
+            <span
+                class="checkbox-icon"
+                th:classappend="${sect2_nu_obtine_venituri == true or sect2_nu_obtine_venituri == 'true' ? 'checked' : ''}"
+              >
+                <svg
+                  th:if="${sect2_nu_obtine_venituri == true or sect2_nu_obtine_venituri == 'true'}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M2 6l3 3 5-5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            <div style="flex: 1; min-width: 0;">
+              <div class="form-row mb0">
+                <div class="field-line flex1 mb0">
+                  <span class="field-label"> Unitatea de cult nu obține venituri din închirierea, arendarea și concesionarea proprietăților.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="section-title mt8">III. Unitatea de cult îndeplinește cel puțin una dintre următoarele condiții:</p>
+        
+           <div class="checkbox-row" style="margin-bottom: 4px;">
+            <span
+                class="checkbox-icon"
+                th:classappend="${sect3_credinciosi_40pct == true or sect3_credinciosi_40pct == 'true' ? 'checked' : ''}"
+              >
+                <svg
+                  th:if="${sect3_credinciosi_40pct == true or sect3_credinciosi_40pct == 'true'}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M2 6l3 3 5-5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            <div style="flex: 1; min-width: 0;">
+              <div class="form-row mb0">
+                <div class="field-line flex1 mb0">
+                  <span class="field-label">Credincioșii sunt, în proporție de minimum 40%, persoane în vârstă de peste 65 de ani. Anexez în acest sens extras al ultimului recensământ sau adeverința de la unitatea administrativ <br> teritorială.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="checkbox-row" style="margin-bottom: 4px;">
+            <span
+                class="checkbox-icon"
+                th:classappend="${sect3_parohia_200_familii == true or sect3_parohia_200_familii == 'true' ? 'checked' : ''}"
+              >
+                <svg
+                  th:if="${sect3_parohia_200_familii == true or sect3_parohia_200_familii == 'true'}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M2 6l3 3 5-5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            <div style="flex: 1; min-width: 0;">
+              <div class="form-row mb0">
+                <div class="field-line flex1 mb0">
+                  <span class="field-label"> Parohia are până la 200 de familii sau se află situate în zone izolate, greu accesibile. Anexez în acest sens extras al ultimului recensământ sau dovada din partea Centrului <br> Eparhial/Cultului.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkbox-row" style="margin-bottom: 4px;">
+            <span
+                class="checkbox-icon"
+                th:classappend="${sect3_nu_dispun_lacas == true or sect3_nu_dispun_lacas == 'true' ? 'checked' : ''}"
+              >
+                <svg
+                  th:if="${sect3_nu_dispun_lacas == true or sect3_nu_dispun_lacas == 'true'}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M2 6l3 3 5-5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            <div style="flex: 1; min-width: 0;">
+              <div class="form-row mb0">
+                <div class="field-line flex1 mb0">
+                  <p class="field-label">  Nu dispun de lăcaș de cult sau de casă parohială, iar personalul clerical nu deține locuință proprietate personală în localitate. Anexez adeverință de la unitatea administrativ teritorială <br>privind impozitele și taxele locale (Primărie, Consiliul Local/ General).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkbox-row" style="margin-bottom: 4px;">
+            <span
+                class="checkbox-icon"
+                th:classappend="${sect3_nu_beneficiaza_sprijin == true or sect3_nu_beneficiaza_sprijin == 'true' ? 'checked' : ''}"
+              >
+                <svg
+                  th:if="${sect3_nu_beneficiaza_sprijin == true or sect3_nu_beneficiaza_sprijin == 'true'}"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M2 6l3 3 5-5"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            <div style="flex: 1; min-width: 0;">
+              <div class="form-row mb0">
+                <div class="field-line flex1 mb0">
+                  <span class="field-label">  Parohia nu beneficiază de sprijin financiar pentru salarizarea personalului neclerical. Anexez adeverință de la unitatea administrativ teritorială (Consiliul Județean).</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+
+          <div class="signature-section">
+            <div class="form-row">
+              <div class="field-line flex1 mb0">
+                <span class="field-label" style="font-weight: 500;">Semnătură</span>
+                <div class="field-input flex1">
+                  <span class="value"></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-row mt4">
+              <div class="field-line flex1 mb0">
+                <span class="field-label" style="font-weight: 500;">Ștampilă</span>
+                <div class="field-input flex1">
+                  <span class="value"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+
+          <div class="vizat-section"style="justify-content: flex-end;">
+            
+            <div class="form-row mt4" style="justify-content: flex-end;">
+              <div class="field-line mb0">
+                <span class="field-label" style="font-weight: 600;" >Vizat </span>
+            <p>de unitatea centrală de Cult/Centrul de cult,</p>
+              </div>
+            </div>
+            <div class="form-row mt4" style="justify-content: flex-end;">
+              <div class="field-line mb0">
+                <span class="field-label" style="font-weight: 500;">Semnătură</span>
+                <div class="field-input w150">
+                  <span class="value"></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-row mt4" style="justify-content: flex-end;">
+              <div class="field-line mb0">
+                <span class="field-label" style="font-weight: 500;">Ștampilă</span>
+                <div class="field-input w150">
+                  <span class="value"></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-row mt4" style="justify-content: flex-end;">
+              <div class="field-line mb0">
+                <span class="field-label" style="font-weight: 500;">Data</span>
+                <div class="field-input w150">
+                  <span class="value" th:text="${vizat_data} ?: ''"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="doc-footer avoid-break">
+          <div class="footer-notes">
+            <p>Anexa nr.3 — Declarație unitate de cult</p>
+          </div>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
