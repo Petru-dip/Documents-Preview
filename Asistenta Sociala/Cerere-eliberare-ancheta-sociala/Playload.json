@@ -1,0 +1,317 @@
+{
+    "beneficiaryId": "georgiana",
+    "createdAt": "2026-03-13T06:48:27.417+00:00",
+    "updatedAt": "2026-03-13T08:53:29.894+00:00",
+    "createdBy": "156",
+    "lastModifiedBy": "156",
+    "id": "a3a0a85c-1ea8-11f1-8e86-075f838ab9fa",
+    "category": "REQUEST_FORM",
+    "templateKey": "a3a0a85c-1ea8-11f1-8e86-075f838ab9fa",
+    "name": "Cerere-eliberare-ancheta-sociala",
+    "description": "",
+    "title": "Cerere-eliberare-ancheta-sociala",
+    "subTitle": "Cerere-eliberare-ancheta-sociala.pdf",
+    "sections": [
+        {
+            "id": "fe51b830-bfa7-4c7c-b09e-27d7e362ea86",
+            "order": 0,
+            "title": "Detalii cerere",
+            "fields": [
+                {
+                    "id": "acf01f2d-1ea9-11f1-8e86-d353d903324e",
+                    "fieldKey": "acf01f2d-1ea9-11f1-8e86-d353d903324e",
+                    "label": "Subsemnatul(a)",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Subsemnatul(a)",
+                    "description": "",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 3,
+                    "placeHolder": "Nume și Prenume"
+                },
+                {
+                    "id": "acf01f2e-1ea9-11f1-8e86-3d119bc49ae3",
+                    "fieldKey": "acf01f2e-1ea9-11f1-8e86-3d119bc49ae3",
+                    "label": "Localitatea",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Localitatea",
+                    "description": "",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 3,
+                    "placeHolder": "Localitatea"
+                },
+                {
+                    "id": "acf01f2f-1ea9-11f1-8e86-8144786c7b6a",
+                    "fieldKey": "acf01f2f-1ea9-11f1-8e86-8144786c7b6a",
+                    "label": "Comuna",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Comuna",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 3,
+                    "placeHolder": "Comuna"
+                },
+                {
+                    "id": "acf01f30-1ea9-11f1-8e86-4b836eafa9a9",
+                    "fieldKey": "acf01f30-1ea9-11f1-8e86-4b836eafa9a9",
+                    "label": "Județul",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Județul",
+                    "description": "",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 3,
+                    "placeHolder": "Județul"
+                },
+                {
+                    "id": "acf01f31-1ea9-11f1-8e86-d35bf56a4cb8",
+                    "fieldKey": "acf01f31-1ea9-11f1-8e86-d35bf56a4cb8",
+                    "label": "",
+                    "fieldType": "TEXT",
+                    "title": "motivul",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "textStyle": "PARAGRAPH",
+                    "content": "Vă rog să-mi aprobați efectuarea unei anchete sociale fiindu-mi necesară la:"
+                },
+                {
+                    "id": "acf06d52-1ea9-11f1-8e86-8d87d7d528a8",
+                    "fieldKey": "acf06d52-1ea9-11f1-8e86-8d87d7d528a8",
+                    "label": "Motiv anchetă",
+                    "fieldType": "LONG_ANSWER",
+                    "title": "Motiv anchetă",
+                    "description": "",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "maximumLength": 100,
+                    "minimumLength": 3,
+                    "placeHolder": "Descrie în acest chenar motivul justificat pentru efectuarea anchetei sociale."
+                },
+                {
+                    "id": "acf06d53-1ea9-11f1-8e86-1544fcab0372",
+                    "fieldKey": "acf06d53-1ea9-11f1-8e86-1544fcab0372",
+                    "label": "Data",
+                    "fieldType": "DATE",
+                    "title": "Data",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "defaultValue": "",
+                    "isReadOnly": false,
+                    "disableDays": [],
+                    "placeHolder": "Selectează data",
+                    "defaultToCurrentDate": true
+                }
+            ]
+        }
+    ],
+    "otherRequirementSection": {
+        "id": "da285331-d9c3-4994-926d-1a735a2c4ad3",
+        "order": 0,
+        "title": "",
+        "fields": null
+    },
+    "status": "INACTIVE",
+    "fileDetail": {
+        "id": "5296b890-4c2a-4bff-a7bf-95ddbe872803",
+        "filePath": "/beneficiaries/georgiana/form-templates/a3a0a85c-1ea8-11f1-8e86-075f838ab9fa/file-detail/Template_2026-03-13_08-01-11.html",
+        "fileName": "Template_2026-03-13_08-01-11.html",
+        "contentType": "text/html"
+    },
+    "headerConfig": {
+        "show": true
+    },
+    "footerConfig": {
+        "show": true
+    },
+    "variableConfigs": [
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1c81234",
+            "name": "beneficiaryName",
+            "type": "SYSTEM_FIELD",
+            "field": "BRANDING_OFFICIAL_NAME",
+            "fieldType": "BENEFICIARY_DETAILS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1c91235",
+            "name": "beneficiaryAddress",
+            "type": "SYSTEM_FIELD",
+            "field": "BRANDING_ADDRESS",
+            "fieldType": "BENEFICIARY_DETAILS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1c91236",
+            "name": "beneficiaryLogo",
+            "type": "SYSTEM_FIELD",
+            "field": "BRANDING_LOGO_URL",
+            "fieldType": "BENEFICIARY_DETAILS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1ca1237",
+            "name": "beneficiaryFiscalId",
+            "type": "SYSTEM_FIELD",
+            "field": "BRANDING_FISCAL_CODE",
+            "fieldType": "BENEFICIARY_DETAILS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1ca1238",
+            "name": "inputQrImage",
+            "type": "SYSTEM_FIELD",
+            "field": "INPUT_REGISTRATION_QR_CODE",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1ca1239",
+            "name": "outputQrImage",
+            "type": "SYSTEM_FIELD",
+            "field": "OUTPUT_REGISTRATION_QR_CODE",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1cb123a",
+            "name": "outputRegistrationSeries",
+            "type": "SYSTEM_FIELD",
+            "field": "OUTPUT_REGISTRATION_SERIES",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1cb123b",
+            "name": "outputRegistrationNumber",
+            "type": "SYSTEM_FIELD",
+            "field": "OUTPUT_REGISTRATION_NUMBER",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1cb123c",
+            "name": "outputRegistrationDate",
+            "type": "SYSTEM_FIELD",
+            "field": "OUTPUT_REGISTRATION_DATE",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1cc123d",
+            "name": "inputRegistrationSeries",
+            "type": "SYSTEM_FIELD",
+            "field": "INPUT_REGISTRATION_SERIES",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1cc123e",
+            "name": "inputRegistrationNumber",
+            "type": "SYSTEM_FIELD",
+            "field": "INPUT_REGISTRATION_NUMBER",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1cc123f",
+            "name": "inputRegistrationDate",
+            "type": "SYSTEM_FIELD",
+            "field": "INPUT_REGISTRATION_DATE",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1cd1240",
+            "name": "registeredByDepartment",
+            "type": "SYSTEM_FIELD",
+            "field": "CREATED_BY_DEPARTMENT_NAME",
+            "fieldType": "AUDIT_FIELDS"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1cd1241",
+            "name": "subsemnatul",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "acf01f2d-1ea9-11f1-8e86-d353d903324e",
+            "property": "VALUE",
+            "sourceFormTemplateId": "a3a0a85c-1ea8-11f1-8e86-075f838ab9fa"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1ce1242",
+            "name": "localitatea",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "acf01f2e-1ea9-11f1-8e86-3d119bc49ae3",
+            "property": "VALUE",
+            "sourceFormTemplateId": "a3a0a85c-1ea8-11f1-8e86-075f838ab9fa"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1ce1243",
+            "name": "comuna",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "acf01f2f-1ea9-11f1-8e86-8144786c7b6a",
+            "property": "VALUE",
+            "sourceFormTemplateId": "a3a0a85c-1ea8-11f1-8e86-075f838ab9fa"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1cf1244",
+            "name": "judetul",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "acf01f30-1ea9-11f1-8e86-4b836eafa9a9",
+            "property": "VALUE",
+            "sourceFormTemplateId": "a3a0a85c-1ea8-11f1-8e86-075f838ab9fa"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1cf1245",
+            "name": "motiv_ancheta",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "acf06d52-1ea9-11f1-8e86-8d87d7d528a8",
+            "property": "VALUE",
+            "sourceFormTemplateId": "a3a0a85c-1ea8-11f1-8e86-075f838ab9fa"
+        },
+        {
+            "id": "0a2a889b-9cb2-155d-819c-e62aa1cf1246",
+            "name": "data",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "acf06d53-1ea9-11f1-8e86-1544fcab0372",
+            "property": "VALUE",
+            "sourceFormTemplateId": "a3a0a85c-1ea8-11f1-8e86-075f838ab9fa"
+        }
+    ],
+    "editable": true
+}
