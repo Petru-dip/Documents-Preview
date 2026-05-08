@@ -1,0 +1,445 @@
+{
+    "beneficiaryId": "demo",
+    "createdAt": "2026-05-07T08:44:43.688+00:00",
+    "updatedAt": "2026-05-07T08:57:33.017+00:00",
+    "createdBy": "1",
+    "lastModifiedBy": "1",
+    "id": "fe767271-49f0-11f1-b85d-71f080e21dfa",
+    "category": "REQUEST_FORM",
+    "templateKey": "c41588d1-671c-4b75-aae4-a9071836d6cf",
+    "name": "Formular Sesizări_imported-Copy",
+    "description": "Sesizări",
+    "title": "Sesizări",
+    "subTitle": "Sesizări",
+    "status": "ACTIVE",
+    "sections": [
+        {
+            "id": "2e085c25-7c40-4732-a72b-1de96c0e9a18",
+            "order": 0,
+            "title": "Depune o sesizare",
+            "fields": [
+                {
+                    "id": "fe60524c-49f0-11f1-b85d-0febb4db945c",
+                    "fieldKey": "20131997-7e20-4a0d-9fb2-a89b9c4fbe11",
+                    "label": "",
+                    "fieldType": "TEXT",
+                    "title": "Acest formular este destinat transmiterii sesizărilor. Vă rugăm să completați cu atenție toate informațiile solicitate.",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "textStyle": "INFO",
+                    "content": "Acest formular este destinat transmiterii sesizărilor. Vă rugăm să completați cu atenție toate informațiile solicitate."
+                },
+                {
+                    "id": "fe61fffd-49f0-11f1-b85d-d17db9cb1e1a",
+                    "fieldKey": "ef9dc092-d84a-4758-8ff7-6c5e287f871d",
+                    "label": "Selectați categoria sesizării",
+                    "fieldType": "DROPDOWN",
+                    "title": "Selectați categoria sesizării",
+                    "description": "",
+                    "isRequired": true,
+                    "validations": [],
+                    "options": [
+                        {
+                            "id": null,
+                            "value": "Evenimente",
+                            "icon": "PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy41IDEuNUgxMi43NVYwLjc1QzEyLjc1IDAuMzM3NSAxMi40MTI1IDAgMTIgMEMxMS41ODc1IDAgMTEuMjUgMC4zMzc1IDExLjI1IDAuNzVWMS41SDMuNzVWMC43NUMzLjc1IDAuMzM3NSAzLjQxMjUgMCAzIDBDMi41ODc1IDAgMi4yNSAwLjMzNzUgMi4yNSAwLjc1VjEuNUgxLjVDMC42Njc1IDEuNSAwLjAwNzQ5OTk5IDIuMTc1IDAuMDA3NDk5OTkgM0wwIDEzLjVDMCAxNC4zMjUgMC42Njc1IDE1IDEuNSAxNUgxMy41QzE0LjMyNSAxNSAxNSAxNC4zMjUgMTUgMTMuNVYzQzE1IDIuMTc1IDE0LjMyNSAxLjUgMTMuNSAxLjVaTTkgMTMuNUg2VjEyTDkgMTJWMTMuNVpNOSAxMC41TDYgMTAuNVY5TDkgOVYxMC41Wk0xMC41IDEyVjEzLjVIMTIuNzVDMTMuMTYyNSAxMy41IDEzLjUgMTMuMTYyNSAxMy41IDEyLjc1VjEySDEwLjVaTTEzLjUgMTAuNVY5SDEwLjVWMTAuNUgxMy41Wk00LjUgMTAuNVY5SDEuNUwxLjUgMTAuNUg0LjVaTTEuNSAxMlYxMi43NUMxLjUgMTMuMTYyNSAxLjgzNzUgMTMuNSAyLjI1IDEzLjVINC41VjEySDEuNVpNNiA2VjcuNUw5IDcuNVY2SDZaTTEzLjUgNlY3LjVIMTAuNVY2SDEzLjVaTTEuNSA3LjVINC41VjZIMS41TDEuNSA3LjVaIiBmaWxsPSIjNUU2MTkxIi8+Cjwvc3ZnPgo=",
+                            "name": "Evenimente",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Străzi și trotuare",
+                            "icon": "PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik01IDIwQzUuNTUgMjAgNiAxOS41NSA2IDE5VjVDNiA0LjQ1IDUuNTUgNCA1IDRDNC40NSA0IDQgNC40NSA0IDVWMTlDNCAxOS41NSA0LjQ1IDIwIDUgMjBaIiBmaWxsPSIjNUU2MTkxIi8+CiAgICA8cGF0aCBkPSJNMTkgNEMxOC40NSA0IDE4IDQuNDUgMTggNVYxOUMxOCAxOS41NSAxOC40NSAyMCAxOSAyMEMxOS41NSAyMCAyMCAxOS41NSAyMCAxOVY1QzIwIDQuNDUgMTkuNTUgNCAxOSA0WiIgZmlsbD0iIzVFNjE5MSIvPgogICAgPHBhdGggZD0iTTEzIDdDMTMgNy41NSAxMi41NSA4IDEyIDhDMTEuNDUgOCAxMSA3LjU1IDExIDdWNUMxMSA0LjQ1IDExLjQ1IDQgMTIgNEMxMi41NSA0IDEzIDQuNDUgMTMgNVY3WiIgZmlsbD0iIzVFNjE5MSIvPgogICAgPHBhdGggZD0iTTEyIDE0QzEyLjU1IDE0IDEzIDEzLjU1IDEzIDEzVjExQzEzIDEwLjQ1IDEyLjU1IDEwIDEyIDEwQzExLjQ1IDEwIDExIDEwLjQ1IDExIDExVjEzQzExIDEzLjU1IDExLjQ1IDE0IDEyIDE0WiIgZmlsbD0iIzVFNjE5MSIvPgogICAgPHBhdGggZD0iTTEzIDE5QzEzIDE5LjU1IDEyLjU1IDIwIDEyIDIwQzExLjQ1IDIwIDExIDE5LjU1IDExIDE5VjE3QzExIDE2LjQ1IDExLjQ1IDE2IDEyIDE2QzEyLjU1IDE2IDEzIDE2LjQ1IDEzIDE3VjE5WiIgZmlsbD0iIzVFNjE5MSIvPgogICAgPC9zdmc+",
+                            "name": "Străzi și trotuare",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Construcție",
+                            "icon": "IDxzdmcKICAgICAgICB3aWR0aD0iMjQiCiAgICAgICAgaGVpZ2h0PSIyNCIKICAgICAgICB2aWV3Qm94PSIwIDAgMjQgMjQiCiAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgID4KICAgICAgICA8cGF0aAogICAgICAgICAgZD0iTTEyIDdWNUMxMiAzLjkgMTEuMSAzIDEwIDNINEMyLjkgMyAyIDMuOSAyIDVWMTlDMiAyMC4xIDIuOSAyMSA0IDIxSDIwQzIxLjEgMjEgMjIgMjAuMSAyMiAxOVY5QzIyIDcuOSAyMS4xIDcgMjAgN0gxMlpNNiAxOUg0VjE3SDZWMTlaTTYgMTVINFYxM0g2VjE1Wk02IDExSDRWOUg2VjExWk02IDdINFY1SDZWN1pNMTAgMTlIOFYxN0gxMFYxOVpNMTAgMTVIOFYxM0gxMFYxNVpNMTAgMTFIOFY5SDEwVjExWk0xMCA3SDhWNUgxMFY3Wk0xOSAxOUgxMlYxN0gxNFYxNUgxMlYxM0gxNFYxMUgxMlY5SDE5QzE5LjU1IDkgMjAgOS40NSAyMCAxMFYxOEMyMCAxOC41NSAxOS41NSAxOSAxOSAxOVpNMTggMTFIMTZWMTNIMThWMTFaTTE4IDE1SDE2VjE3SDE4VjE1WiIKICAgICAgICAgIGZpbGw9IiM1RTYxOTEiCiAgICAgICAgLz4KICAgICAgPC9zdmc+",
+                            "name": "Construcție",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Vandalism",
+                            "icon": "PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yMSA1VjExLjU5TDE4LjcxIDkuMjlDMTguMzIgOC45IDE3LjY4IDguOSAxNy4yOSA5LjI5TDE0IDEyLjU5TDEwLjcxIDkuM0MxMC4zMiA4LjkxIDkuNjkgOC45MSA5LjMgOS4zTDYgMTIuNTlMMyA5LjU4VjVDMyAzLjkgMy45IDMgNSAzSDE5QzIwLjEgMyAyMSAzLjkgMjEgNVpNMTggMTEuNDJMMjEgMTQuNDNWMTlDMjEgMjAuMSAyMC4xIDIxIDE5IDIxSDVDMy45IDIxIDMgMjAuMSAzIDE5VjEyLjQyTDUuMjkgMTQuNzFDNS42OCAxNS4xIDYuMzEgMTUuMSA2LjcgMTQuNzFMMTAgMTEuNDFMMTMuMjkgMTQuN0MxMy42OCAxNS4wOSAxNC4zMSAxNS4wOSAxNC43IDE0LjdMMTggMTEuNDJaIiBmaWxsPSIjNUU2MTkxIi8+CiAgICA8L3N2Zz4=",
+                            "name": "Vandalism",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Spații verzi",
+                            "icon": "PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPHBhdGggZD0iTTE1LjA2IDIuMTY4ODFDMTguOTggMi4xMDg4MSAyMi4xNyA1LjI1ODgxIDIyLjE3IDkuMTY4ODFDMjIuMTcgMTIuNzU4OCAxOS40NyAxNS43MDg4IDE2IDE2LjExODhWMTkuOTk4OEgxOEMxOC41NSAxOS45OTg4IDE5IDIwLjQ0ODggMTkgMjAuOTk4OEMxOSAyMS41NDg4IDE4LjU1IDIxLjk5ODggMTggMjEuOTk4OEg0QzMuNDUgMjEuOTk4OCAzIDIxLjU0ODggMyAyMC45OTg4VjE2Ljk5ODhIMi41QzIuMjIgMTYuOTk4OCAyIDE2Ljc3ODggMiAxNi40OTg4VjEyLjk5ODhDMiAxMi40NDg4IDIuNDUgMTEuOTk4OCAzIDExLjk5ODhINkM2LjU1IDExLjk5ODggNyAxMi40NDg4IDcgMTIuOTk4OFYxNi40OTg4QzcgMTYuNzc4OCA2Ljc4IDE2Ljk5ODggNi41IDE2Ljk5ODhINlYxOS45OTg4SDE0LjAxVjE2LjA1ODhDMTAuNzYgMTUuNTE4OCA4LjI3IDEyLjczODggOC4xOCA5LjM1ODgxQzguMDcgNS41Mzg4MSAxMS4yMyAyLjIyODgxIDE1LjA2IDIuMTY4ODFaIiBmaWxsPSIjNUU2MTkxIiAvPgogICAgICA8cGF0aCBkPSJNNiA5LjQ5OTAyQzYgMTAuMzI3NSA1LjMyODQzIDEwLjk5OSA0LjUgMTAuOTk5QzMuNjcxNTcgMTAuOTk5IDMgMTAuMzI3NSAzIDkuNDk5MDJDMyA4LjY3MDYgMy42NzE1NyA3Ljk5OTAyIDQuNSA3Ljk5OTAyQzUuMzI4NDMgNy45OTkwMiA2IDguNjcwNiA2IDkuNDk5MDJaIiBmaWxsPSIjNUU2MTkxIiAvPgogICAgPC9zdmc+",
+                            "name": "Spații verzi",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Utilități",
+                            "icon": "PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xOS4yOCA0LjkyOTYxTDE3LjE2IDIuODA5NjFDMTYuMzggMi4wMjk2MSAxNS4xMSAyLjAyOTYxIDE0LjMzIDIuODA5NjFMMTEuNSA1LjYzOTYxTDEzLjYyIDcuNzU5NjFMMTUuNzQgNS42Mzk2MUwxOS4yOCA5LjE3OTYxQzIwLjQ1IDcuOTk5NjEgMjAuNDUgNi4wOTk2MSAxOS4yOCA0LjkyOTYxWiIgZmlsbD0iIzVFNjE5MSIvPgogICAgPHBhdGggZD0iTTUuNDkwMzUgMTMuNzY5NEM2LjA4MDM1IDE0LjM1OTQgNy4wMzAzNSAxNC4zNTk0IDcuNjEwMzUgMTMuNzY5NEwxMC4wODA0IDExLjI5OTRMNy45NjAzNSA5LjE2OTQzTDUuNDkwMzUgMTEuNjM5NEM0LjkwMDM1IDEyLjIyOTQgNC45MDAzNSAxMy4xNzk0IDUuNDkwMzUgMTMuNzY5NFoiIGZpbGw9IiM1RTYxOTEiLz4KICAgIDxwYXRoIGQ9Ik0xMy42MjAxIDkuMTY5MzhMMTQuMzMwMSA4LjQ1OTM4QzE0LjcyMDEgOC4wNjkzOCAxNS4zNTAxIDguMDY5MzggMTUuNzQwMSA4LjQ2OTM4TDE3Ljg2MDEgMTAuNTg5NEMxOC4yNTAxIDEwLjk3OTQgMTguMjUwMSAxMS42MDk0IDE3Ljg2MDEgMTEuOTk5NEMxNy40NzAxIDEyLjM4OTQgMTYuODQwMSAxMi4zODk0IDE2LjQ1MDEgMTEuOTk5NEw3LjI2MDA5IDIxLjE5OTRDNi40MDAwOSAyMi4wNTk0IDQuOTUwMDkgMjEuOTY5NCA0LjIxMDA5IDIwLjkzOTRDMy42MjAwOSAyMC4xMjk0IDMuODAwMDkgMTguOTg5NCA0LjUwMDA5IDE4LjI4OTRMMTEuNTAwMSAxMS4yODk0TDguMzIwMDkgOC4xMDkzOEM3LjczMDA5IDcuNTI5MzggNy43MzAwOSA2LjU3OTM4IDguMzIwMDkgNS45ODkzOEM4LjkwMDA5IDUuMzk5MzcgOS44NTAwOSA1LjM5OTM3IDEwLjQ0MDEgNS45ODkzOEwxMy42MjAxIDkuMTY5MzhaIiBmaWxsPSIjNUU2MTkxIi8+CiAgICA8L3N2Zz4=",
+                            "name": "Utilități",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Piețele fermierilor",
+                            "icon": "PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yMS44OTk1IDguODlMMjAuODQ5NSA0LjUyQzIwLjYyOTUgMy42MiAxOS44NDk1IDMgMTguOTM5NSAzSDE2LjcyOTVIMTQuNzE5NUgxMi45OTk1SDEwLjk5OTVIOS4yNzk1Mkg3LjI1OTUySDUuMDQ5NTJDNC4xNDk1MiAzIDMuMzU5NTIgMy42MyAzLjE0OTUyIDQuNTJMMi4wOTk1MiA4Ljg5QzEuODU5NTIgOS45MSAyLjA3OTUyIDEwLjk1IDIuNzE5NTIgMTEuNzdDMi43OTk1MiAxMS44OCAyLjkwOTUyIDExLjk2IDIuOTk5NTIgMTIuMDZWMTlDMi45OTk1MiAyMC4xIDMuODk5NTIgMjEgNC45OTk1MiAyMUgxOC45OTk1QzIwLjA5OTUgMjEgMjAuOTk5NSAyMC4xIDIwLjk5OTUgMTlWMTIuMDZDMjEuMDg5NSAxMS45NyAyMS4xOTk1IDExLjg4IDIxLjI3OTUgMTEuNzhDMjEuOTE5NSAxMC45NiAyMi4xNDk1IDkuOTEgMjEuODk5NSA4Ljg5Wk03LjAxOTUyIDVMNi40Mzk1MiA5Ljg2QzYuMzU5NTIgMTAuNTEgNS44Mzk1MiAxMSA1LjIyOTUyIDExQzQuNzM5NTIgMTEgNC40Mjk1MiAxMC43MSA0LjI5OTUyIDEwLjUzQzQuMDM5NTIgMTAuMiAzLjk0OTUyIDkuNzcgNC4wNDk1MiA5LjM2TDUuMDQ5NTIgNUg3LjAxOTUyWk0xOC45MDk1IDQuOTlMMTkuOTU5NSA5LjM2QzIwLjA1OTUgOS43OCAxOS45Njk1IDEwLjIgMTkuNzA5NSAxMC41M0MxOS41Njk1IDEwLjcxIDE5LjI2OTUgMTEgMTguNzY5NSAxMUMxOC4xNTk1IDExIDE3LjYyOTUgMTAuNTEgMTcuNTU5NSA5Ljg2TDE2Ljk3OTUgNUwxOC45MDk1IDQuOTlaTTE1LjUwOTUgOS41MkMxNS41NTk1IDkuOTEgMTUuNDM5NSAxMC4zIDE1LjE3OTUgMTAuNTlDMTQuOTQ5NSAxMC44NSAxNC42Mjk1IDExIDE0LjIxOTUgMTFDMTMuNTQ5NSAxMSAxMi45OTk1IDEwLjQxIDEyLjk5OTUgOS42OVY1SDE0Ljk1OTVMMTUuNTA5NSA5LjUyWk0xMC45OTk1IDkuNjlDMTAuOTk5NSAxMC40MSAxMC40NDk1IDExIDkuNzA5NTIgMTFDOS4zNjk1MiAxMSA5LjA1OTUyIDEwLjg1IDguODE5NTIgMTAuNTlDOC41Njk1MiAxMC4zIDguNDQ5NTIgOS45MSA4LjQ4OTUyIDkuNTJMOS4wMzk1MiA1SDEwLjk5OTVWOS42OVpNMTcuOTk5NSAxOUg1Ljk5OTUyQzUuNDQ5NTIgMTkgNC45OTk1MiAxOC41NSA0Ljk5OTUyIDE4VjEyLjk3QzUuMDc5NTIgMTIuOTggNS4xNDk1MiAxMyA1LjIyOTUyIDEzQzYuMDk5NTIgMTMgNi44ODk1MiAxMi42NCA3LjQ2OTUyIDEyLjA1QzguMDY5NTIgMTIuNjUgOC44Njk1MiAxMyA5Ljc3OTUyIDEzQzEwLjY0OTUgMTMgMTEuNDI5NSAxMi42NCAxMi4wMDk1IDEyLjA3QzEyLjU5OTUgMTIuNjQgMTMuMzk5NSAxMyAxNC4yOTk1IDEzQzE1LjEzOTUgMTMgMTUuOTM5NSAxMi42NSAxNi41Mzk1IDEyLjA1QzE3LjExOTUgMTIuNjQgMTcuOTA5NSAxMyAxOC43Nzk1IDEzQzE4Ljg1OTUgMTMgMTguOTI5NSAxMi45OCAxOS4wMDk1IDEyLjk3VjE4QzE4Ljk5OTUgMTguNTUgMTguNTQ5NSAxOSAxNy45OTk1IDE5WiIgZmlsbD0iIzVFNjE5MSIvPgogICAgPC9zdmc+",
+                            "name": "Piețele fermierilor",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Iluminat public",
+                            "icon": "PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik00IDEwQzQgNS41ODE3MiA3LjU4MTcyIDIgMTIgMkMxMi41NTIzIDIgMTMgMi40NDc3MiAxMyAzQzEzIDMuNTUyMjggMTIuNTUyMyA0IDEyIDRDOC42ODYyOSA0IDYgNi42ODYyOSA2IDEwVjIwSDExVjE3Ljk5OTVIMTAuNUMxMC4yMiAxNy45OTk1IDEwIDE3Ljc3OTUgMTAgMTcuNDk5NVYxNC45OTk1QzEwIDE0LjQ0OTUgMTAuNDUgMTMuOTk5NSAxMSAxMy45OTk1SDE0QzE0LjU1IDEzLjk5OTUgMTUgMTQuNDQ5NSAxNSAxNC45OTk1VjE3LjQ5OTVDMTUgMTcuNzc5NSAxNC43OCAxNy45OTk1IDE0LjUgMTcuOTk5NUgxNFYyMEgyMEMyMC41NTIzIDIwIDIxIDIwLjQ0NzcgMjEgMjFDMjEgMjEuNTUyMyAyMC41NTIzIDIyIDIwIDIySDRDMy40NDc3MiAyMiAzIDIxLjU1MjMgMyAyMUMzIDIwLjQ0NzcgMy40NDc3MiAyMCA0IDIwVjEwWiIgZmlsbD0iIzVFNjE5MSIvPgogICAgPHBhdGggZD0iTTE3IDJIMTVDMTQuNDUgMiAxNCAyLjQ1IDE0IDNDMTQgMy41NSAxNC40NSA0IDE1IDRIMTdDMTcuNTUgNCAxOCAzLjU1IDE4IDNDMTggMi40NSAxNy41NSAyIDE3IDJaIiBmaWxsPSIjNUU2MTkxIi8+CiAgICA8cGF0aCBkPSJNMTMuNzAzOCA3LjA5MjVDMTMuMzEzOCA3LjQ4MjUgMTIuNjgzOCA3LjQ4MjUgMTIuMjkzOCA3LjA5MjVDMTEuOTAzOCA2LjcwMjUgMTEuOTAzOCA2LjA4MjUgMTIuMjgzOCA1LjY4MjVMMTIuNjczOCA1LjI5MjVDMTMuMDYzOCA0LjkwMjUgMTMuNjkzOCA0LjkwMjUgMTQuMDgzOCA1LjI5MjVMMTQuMDkzOCA1LjMwMjVDMTQuNDczOCA1LjY4MjUgMTQuNDgzOCA2LjMxMjUgMTQuMDkzOCA2LjcwMjVMMTMuNzAzOCA3LjA5MjVaIiBmaWxsPSIjNUU2MTkxIi8+CiAgICA8cGF0aCBkPSJNMTYuMDMzOCA4LjMwMjVIMTYuMDQzOEMxNi41OTM4IDguMzAyNSAxNy4wMzM4IDcuODYyNSAxNy4wMzM4IDcuMzEyNVY2LjM1MjVDMTcuMDMzOCA1LjgwMjUgMTYuNTkzOCA1LjM2MjUgMTYuMDQzOCA1LjM2MjVIMTYuMDMzOEMxNS40ODM4IDUuMzYyNSAxNS4wNDM4IDUuODAyNSAxNS4wNDM4IDYuMzUyNVY3LjMxMjVDMTUuMDQzOCA3Ljg2MjUgMTUuNDgzOCA4LjMwMjUgMTYuMDMzOCA4LjMwMjVaIiBmaWxsPSIjNUU2MTkxIi8+CiAgICA8cGF0aCBkPSJNMTcuOTgzOCA2LjcxMjVMMTguMzczOCA3LjEwMjVDMTguNzYzOCA3LjQ5MjUgMTkuMzkzOCA3LjQ5MjUgMTkuNzgzOCA3LjEwMjVDMjAuMTczOCA2LjcxMjUgMjAuMTczOCA2LjA4MjUgMTkuNzgzOCA1LjY5MjVMMTkuMzkzOCA1LjMwMjVDMTkuMDAzOCA0LjkxMjUgMTguMzczOCA0LjkyMjUgMTcuOTkzOCA1LjMwMjVDMTcuNTkzOCA1LjcwMjUgMTcuNTkzOCA2LjMyMjUgMTcuOTgzOCA2LjcxMjVaIiBmaWxsPSIjNUU2MTkxIi8+CiAgICA8cGF0aCBkPSJNMTIuNSAxM0MxMS42NzE2IDEzIDExIDEyLjMyODQgMTEgMTEuNUMxMSAxMC42NzE2IDExLjY3MTYgMTAgMTIuNSAxMEMxMy4zMjg0IDEwIDE0IDEwLjY3MTYgMTQgMTEuNUMxNCAxMi4zMjg0IDEzLjMyODQgMTMgMTIuNSAxM1oiIGZpbGw9IiM1RTYxOTEiLz4KICAgIDwvc3ZnPg==",
+                            "name": "Iluminat public",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "parcare",
+                            "icon": "PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xMi43OSAzSDhDNi45IDMgNiAzLjkgNiA1VjE5QzYgMjAuMSA2LjkgMjEgOCAyMUM5LjEgMjEgMTAgMjAuMSAxMCAxOVYxNUgxM0MxNi41NyAxNSAxOS40MiAxMS44NyAxOC45NSA4LjIxQzE4LjU2IDUuMTkgMTUuODQgMyAxMi43OSAzWk0xMy4yIDExSDEwVjdIMTMuMkMxNC4zIDcgMTUuMiA3LjkgMTUuMiA5QzE1LjIgMTAuMSAxNC4zIDExIDEzLjIgMTFaIiBmaWxsPSIjNUU2MTkxIi8+CiAgICA8L3N2Zz4=",
+                            "name": "Parcare",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Parcare",
+                            "icon": "PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xNiAxNkgxOEMxOC41NSAxNiAxOSAxNi40NSAxOSAxN0MxOSAxNy41NSAxOC41NSAxOCAxOCAxOEgxNkMxNS40NSAxOCAxNSAxNy41NSAxNSAxN0MxNSAxNi40NSAxNS40NSAxNiAxNiAxNlpNMTYgOEgyMUMyMS41NSA4IDIyIDguNDUgMjIgOUMyMiA5LjU1IDIxLjU1IDEwIDIxIDEwSDE2QzE1LjQ1IDEwIDE1IDkuNTUgMTUgOUMxNSA4LjQ1IDE1LjQ1IDggMTYgOFpNMTYgMTJIMjBDMjAuNTUgMTIgMjEgMTIuNDUgMjEgMTNDMjEgMTMuNTUgMjAuNTUgMTQgMjAgMTRIMTZDMTUuNDUgMTQgMTUgMTMuNTUgMTUgMTNDMTUgMTIuNDUgMTUuNDUgMTIgMTYgMTJaTTMgMThDMyAxOS4xIDMuOSAyMCA1IDIwSDExQzEyLjEgMjAgMTMgMTkuMSAxMyAxOFY4SDNWMThaTTEzIDVIMTFMMTAuMjkgNC4yOUMxMC4xMSA0LjExIDkuODUgNCA5LjU5IDRINi40MUM2LjE1IDQgNS44OSA0LjExIDUuNzEgNC4yOUw1IDVIM0MyLjQ1IDUgMiA1LjQ1IDIgNkMyIDYuNTUgMi40NSA3IDMgN0gxM0MxMy41NSA3IDE0IDYuNTUgMTQgNkMxNCA1LjQ1IDEzLjU1IDUgMTMgNVoiIGZpbGw9IiM1RTYxOTEiLz4KICAgIDwvc3ZnPg==",
+                            "name": "Salubritate",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Diverse",
+                            "icon": "PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMiAxMkMyIDYuNDggNi40OCAyIDEyIDJDMTcuNTIgMiAyMiA2LjQ4IDIyIDEyQzIyIDE3LjUyIDE3LjUyIDIyIDEyIDIyQzYuNDggMjIgMiAxNy41MiAyIDEyWk00IDEyQzQgMTAuOSA0LjkgMTAgNiAxMEM3LjEgMTAgOCAxMC45IDggMTJDOCAxMy4xIDcuMSAxNCA2IDE0QzQuOSAxNCA0IDEzLjEgNCAxMlpNMTYgMTJDMTYgMTAuOSAxNi45IDEwIDE4IDEwQzE5LjEgMTAgMjAgMTAuOSAyMCAxMkMyMCAxMy4xIDE5LjEgMTQgMTggMTRDMTYuOSAxNCAxNiAxMy4xIDE2IDEyWk0xMCAxMkMxMCAxMC45IDEwLjkgMTAgMTIgMTBDMTMuMSAxMCAxNCAxMC45IDE0IDEyQzE0IDEzLjEgMTMuMSAxNCAxMiAxNEMxMC45IDE0IDEwIDEzLjEgMTAgMTJaIiBmaWxsPSIjNUU2MTkxIi8+CiAgICA8L3N2Zz4=",
+                            "name": "Diverse",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Transport public",
+                            "icon": "PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xMiA0SDVDMy4zNCA0IDIgNS4zNCAyIDdWMTVDMiAxNi42NiAzLjM0IDE4IDUgMThMNC4yMyAxOC43N0MzLjk1IDE5LjA1IDMuOTUgMTkuNDkgNC4yMyAxOS43N0M0LjUxIDIwLjA1IDQuOTUgMjAuMDUgNS4yMyAxOS43N0w3IDE4SDlWMTNINC41QzQuMjIgMTMgNCAxMi43OCA0IDEyLjVWNi41QzQgNi4yMiA0LjIyIDYgNC41IDZIMTIuNUMxMi43OCA2IDEzIDYuMjIgMTMgNi41VjhIMTVWN0MxNSA1LjM0IDEzLjY2IDQgMTIgNFpNNSAxNEM1LjU1IDE0IDYgMTQuNDUgNiAxNUM2IDE1LjU1IDUuNTUgMTYgNSAxNkM0LjQ1IDE2IDQgMTUuNTUgNCAxNUM0IDE0LjQ1IDQuNDUgMTQgNSAxNFpNMjAuNTcgOS42NkMyMC40MyA5LjI2IDIwLjA1IDkgMTkuNiA5SDEyLjQxQzExLjk1IDkgMTEuNTggOS4yNiAxMS40MyA5LjY2TDEwLjAxIDEzLjc3VjE5LjAxQzEwLjAxIDE5LjU2IDEwLjQ2IDIwIDExLjAxIDIwQzExLjU2IDIwIDEyLjAxIDE5LjU1IDEyLjAxIDE5VjE4SDIwLjAxVjE5QzIwLjAxIDE5LjU1IDIwLjQ2IDIwIDIxLjAxIDIwQzIxLjU2IDIwIDIyIDE5LjU2IDIyLjAxIDE5LjAxTDIyIDEzLjc3TDIwLjU3IDkuNjZaTTEyLjc3IDEwSDE5LjI1QzE5LjQ2IDEwIDE5LjY1IDEwLjE0IDE5LjcyIDEwLjM0TDIwLjQxIDEyLjM0QzIwLjUyIDEyLjY2IDIwLjI4IDEzIDE5Ljk0IDEzSDEyLjA5QzExLjc1IDEzIDExLjUxIDEyLjY2IDExLjYyIDEyLjM0TDEyLjMxIDEwLjM0QzEyLjM2IDEwLjE0IDEyLjU1IDEwIDEyLjc3IDEwWk0xMiAxNkMxMS40NSAxNiAxMSAxNS41NSAxMSAxNUMxMSAxNC40NSAxMS40NSAxNCAxMiAxNEMxMi41NSAxNCAxMyAxNC40NSAxMyAxNUMxMyAxNS41NSAxMi41NSAxNiAxMiAxNlpNMjAgMTZDMTkuNDUgMTYgMTkgMTUuNTUgMTkgMTVDMTkgMTQuNDUgMTkuNDUgMTQgMjAgMTRDMjAuNTUgMTQgMjEgMTQuNDUgMjEgMTVDMjEgMTUuNTUgMjAuNTUgMTYgMjAgMTZaIiBmaWxsPSIjNUU2MTkxIi8+CiAgICA8L3N2Zz4=",
+                            "name": "Transport public",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Animale",
+                            "icon": "PHN2ZwogICAgICAgIHdpZHRoPSIyNCIKICAgICAgICBoZWlnaHQ9IjI0IgogICAgICAgIHZpZXdCb3g9IjAgMCAyNCAyNCIKICAgICAgICBmaWxsPSJub25lIgogICAgICAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgICAgPgogICAgICAgIDxwYXRoCiAgICAgICAgICBkPSJNOSA4QzEwLjM4MDcgOCAxMS41IDYuODgwNzEgMTEuNSA1LjVDMTEuNSA0LjExOTI5IDEwLjM4MDcgMyA5IDNDNy42MTkyOSAzIDYuNSA0LjExOTI5IDYuNSA1LjVDNi41IDYuODgwNzEgNy42MTkyOSA4IDkgOFoiCiAgICAgICAgICBmaWxsPSIjNUU2MTkxIgogICAgICAgIC8+CiAgICAgICAgPHBhdGgKICAgICAgICAgIGQ9Ik00LjUgMTJDNS44ODA3MSAxMiA3IDEwLjg4MDcgNyA5LjVDNyA4LjExOTI5IDUuODgwNzEgNyA0LjUgN0MzLjExOTI5IDcgMiA4LjExOTI5IDIgOS41QzIgMTAuODgwNyAzLjExOTI5IDEyIDQuNSAxMloiCiAgICAgICAgICBmaWxsPSIjNUU2MTkxIgogICAgICAgIC8+CiAgICAgICAgPHBhdGgKICAgICAgICAgIGQ9Ik0xNy41IDUuNUMxNy41IDYuODgwNzEgMTYuMzgwNyA4IDE1IDhDMTMuNjE5MyA4IDEyLjUgNi44ODA3MSAxMi41IDUuNUMxMi41IDQuMTE5MjkgMTMuNjE5MyAzIDE1IDNDMTYuMzgwNyAzIDE3LjUgNC4xMTkyOSAxNy41IDUuNVoiCiAgICAgICAgICBmaWxsPSIjNUU2MTkxIgogICAgICAgIC8+CiAgICAgICAgPHBhdGgKICAgICAgICAgIGQ9Ik0xOS41IDEyQzIwLjg4MDcgMTIgMjIgMTAuODgwNyAyMiA5LjVDMjIgOC4xMTkyOSAyMC44ODA3IDcgMTkuNSA3QzE4LjExOTMgNyAxNyA4LjExOTI5IDE3IDkuNUMxNyAxMC44ODA3IDE4LjExOTMgMTIgMTkuNSAxMloiCiAgICAgICAgICBmaWxsPSIjNUU2MTkxIgogICAgICAgIC8+CiAgICAgICAgPHBhdGgKICAgICAgICAgIGQ9Ik0xNi40NDM0IDEzLjgwNTZDMTYuNzMzIDE0LjE0NyAxNy4wMjczIDE0LjQ5MzggMTcuMzM5NyAxNC44NkMxNy40MTc2IDE0LjkzNzkgMTcuNDk2NSAxNS4wMTYzIDE3LjU3NjEgMTUuMDk1M0MxOC44MzQ0IDE2LjM0NDYgMjAuMjQxMiAxNy43NDEzIDE5Ljk0OTcgMTkuNjZDMTkuNjU5NyAyMC42NyAxOC45Mjk3IDIxLjY5IDE3LjYxOTcgMjEuOThDMTcuMjgzNyAyMi4wNDQ0IDE2LjYwODkgMjEuOTU2NCAxNS43MzY1IDIxLjg0MjVDMTQuNzEzMyAyMS43MDkgMTMuNDE4MyAyMS41NCAxMi4wNzk3IDIxLjU0SDExLjg5OTdDMTAuNTcyMyAyMS41NCA5LjI4NzgzIDIxLjcwOSA4LjI2ODcyIDIxLjg0MzFDNy4zODM4IDIxLjk1OTYgNi42OTg5MyAyMi4wNDk3IDYuMzU5NjYgMjEuOThDNS4wNDk2NiAyMS42OSA0LjMxOTY2IDIwLjY4IDQuMDI5NjYgMTkuNjZDMy43NDc2MyAxNy43NTE2IDUuMTUzNTcgMTYuMzU1OSA2LjQxMTQxIDE1LjEwNzFDNi40OTE1OSAxNS4wMjc1IDYuNTcxMTYgMTQuOTQ4NSA2LjY0OTY2IDE0Ljg3QzcuMjEzNzIgMTQuMjE2MiA3LjcxNjE2IDEzLjYyNCA4LjIzMzM0IDEzLjAxNDVDOC41MjMwMSAxMi42NzMxIDguODE3MzEgMTIuMzI2MiA5LjEyOTY1IDExLjk2QzkuNTk5NjUgMTEuNDIgMTAuMTc5NyAxMC44OCAxMC44Nzk3IDEwLjY0QzEwLjk4OTcgMTAuNiAxMS4wOTk3IDEwLjU3IDExLjIwOTcgMTAuNTVDMTEuNDY5NyAxMC41IDExLjczOTcgMTAuNSAxMS45OTk3IDEwLjVDMTIuMjU5NyAxMC41IDEyLjUyOTcgMTAuNSAxMi43Nzk3IDEwLjU0QzEyLjg4OTcgMTAuNTYgMTIuOTk5NyAxMC41OSAxMy4xMDk3IDEwLjYzQzEzLjgwOTcgMTAuODcgMTQuMzk5NyAxMS40MSAxNC44NTk3IDExLjk1QzE1LjQyMzcgMTIuNjAzOCAxNS45MjYyIDEzLjE5NiAxNi40NDM0IDEzLjgwNTZaIgogICAgICAgICAgZmlsbD0iIzVFNjE5MSIKICAgICAgICAvPgogICAgICA8L3N2Zz4=",
+                            "name": "Animale",
+                            "parentId": null,
+                            "options": null
+                        }
+                    ],
+                    "includeOthers": false,
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": false,
+                    "aiAutoFillPrompt": ""
+                },
+                {
+                    "id": "fe63d4cb-49f0-11f1-b85d-0ba3efd352cc",
+                    "fieldKey": "9be0c11a-f428-4a58-95ef-694cdd01c133",
+                    "label": "Titlul sesizării",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Titlul sesizării",
+                    "description": "Please provide a subject for this complaint",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": false,
+                    "aiAutoFillPrompt": "",
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Vă rugăm să indicați obiectul sesizării"
+                },
+                {
+                    "id": "fe65827c-49f0-11f1-b85d-01dd6dfd4e04",
+                    "fieldKey": "ee1121c1-874b-46d8-bd3f-05f61ae1804a",
+                    "label": "Locația",
+                    "fieldType": "POINT",
+                    "title": "Locația",
+                    "description": "Location",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "isDefaultToCurrentLocation": false
+                },
+                {
+                    "id": "fe67302d-49f0-11f1-b85d-7f6244a9c4b7",
+                    "fieldKey": "07b92846-40c7-4b95-ad9e-0c599c90af86",
+                    "label": "Descriere",
+                    "fieldType": "LONG_ANSWER",
+                    "title": "Descriere",
+                    "description": "Description",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": false,
+                    "aiAutoFillPrompt": "",
+                    "maximumLength": 300,
+                    "minimumLength": 0,
+                    "placeHolder": "Vă rugăm să furnizați o descriere succintă a sesizării"
+                }
+            ]
+        },
+        {
+            "id": "1097d8ce-6aae-4629-bded-2c150feea884",
+            "order": 1,
+            "title": "Observații și mențiuni",
+            "fields": [
+                {
+                    "id": "fe6b27ce-49f0-11f1-b85d-6710fb30ee50",
+                    "fieldKey": "51a399c6-79c6-47f4-9be0-8e0e83a04341",
+                    "label": "",
+                    "fieldType": "TEXT",
+                    "title": "Dacă doriți, puteți furniza informații suplimentare care ne vor ajuta să identificăm și să soluționăm această sesizare mai rapid.",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "textStyle": "SUCCESS",
+                    "content": "Dacă doriți, puteți furniza informații suplimentare care ne vor ajuta să identificăm și să soluționăm această sesizare mai rapid."
+                },
+                {
+                    "id": "fe6dbfdf-49f0-11f1-b85d-733dfefe67e7",
+                    "fieldKey": "3bcf4737-a7df-492c-8af5-309f705b67a0",
+                    "label": "Observații și mențiuni",
+                    "fieldType": "LONG_ANSWER",
+                    "title": "Observații și mențiuni",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": false,
+                    "aiAutoFillPrompt": "",
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Puteți indica aici observații sau mențiuni opționale"
+                }
+            ]
+        },
+        {
+            "id": "a2af24ac-0b03-4635-8f2a-ab7ac1aff694",
+            "order": 2,
+            "title": "Atașamente",
+            "fields": [
+                {
+                    "id": "fe71de90-49f0-11f1-b85d-915155a34b20",
+                    "fieldKey": "e2600a14-2362-4e04-849b-80ff6d9e834f",
+                    "label": "Încarcă imagine",
+                    "fieldType": "FILE_UPLOAD",
+                    "title": "Încarcă imagine",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "maxFileSize": 51201024,
+                    "minFileSize": 1024,
+                    "docFormats": [
+                        "JPG",
+                        "JPEG",
+                        "PNG",
+                        "GIF",
+                        "BMP",
+                        "TIFF",
+                        "MP4",
+                        "AVI",
+                        "MOV",
+                        "WMV",
+                        "MKV"
+                    ],
+                    "maxCount": 100,
+                    "minCount": 1
+                }
+            ]
+        }
+    ],
+    "otherRequirementSection": {
+        "id": "64ca8333-4329-4474-99fc-6cffbbc63367",
+        "order": 0,
+        "title": "",
+        "fields": null
+    },
+    "fileDetail": {
+        "id": "4e71d46c-7510-46f5-9b6c-28cd50378272",
+        "filePath": "beneficiaries/demo/form-templates/fe767271-49f0-11f1-b85d-71f080e21dfa/file-detail/sesizari_2026-04-17_13-15-29_2026-04-27_09-52-16_2026-05-07_08-44-43.html",
+        "fileName": "sesizari_2026-04-17_13-15-29_2026-04-27_09-52-16_2026-05-07_08-44-43.html",
+        "contentType": "text/html"
+    },
+    "headerConfig": {
+        "show": true
+    },
+    "footerConfig": {
+        "show": true
+    },
+    "variableConfigs": [
+        {
+            "name": "beneficiaryName",
+            "type": "SYSTEM_FIELD",
+            "field": "BRANDING_OFFICIAL_NAME",
+            "fieldType": "BENEFICIARY_DETAILS"
+        },
+        {
+            "name": "beneficiaryAddress",
+            "type": "SYSTEM_FIELD",
+            "field": "BRANDING_ADDRESS",
+            "fieldType": "BENEFICIARY_DETAILS"
+        },
+        {
+            "name": "beneficiaryLogo",
+            "type": "SYSTEM_FIELD",
+            "field": "BRANDING_LOGO_URL",
+            "fieldType": "BENEFICIARY_DETAILS"
+        },
+        {
+            "name": "beneficiaryFiscalId",
+            "type": "SYSTEM_FIELD",
+            "field": "BRANDING_FISCAL_CODE",
+            "fieldType": "BENEFICIARY_DETAILS"
+        },
+        {
+            "name": "inputQrImage",
+            "type": "SYSTEM_FIELD",
+            "field": "INPUT_REGISTRATION_QR_CODE",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "outputQrImage",
+            "type": "SYSTEM_FIELD",
+            "field": "OUTPUT_REGISTRATION_QR_CODE",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "outputRegistrationSeries",
+            "type": "SYSTEM_FIELD",
+            "field": "OUTPUT_REGISTRATION_SERIES",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "outputRegistrationNumber",
+            "type": "SYSTEM_FIELD",
+            "field": "OUTPUT_REGISTRATION_NUMBER",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "outputRegistrationDate",
+            "type": "SYSTEM_FIELD",
+            "field": "OUTPUT_REGISTRATION_DATE",
+            "fieldType": "REGISTRATION_DETAILS",
+            "format": "dd-MM-yyyy"
+        },
+        {
+            "name": "inputRegistrationSeries",
+            "type": "SYSTEM_FIELD",
+            "field": "INPUT_REGISTRATION_SERIES",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "inputRegistrationNumber",
+            "type": "SYSTEM_FIELD",
+            "field": "INPUT_REGISTRATION_NUMBER",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "inputRegistrationDate",
+            "type": "SYSTEM_FIELD",
+            "field": "INPUT_REGISTRATION_DATE",
+            "fieldType": "REGISTRATION_DETAILS",
+            "format": "dd-MM-yyyy"
+        },
+        {
+            "name": "registeredByDepartment",
+            "type": "SYSTEM_FIELD",
+            "field": "CREATED_BY_DEPARTMENT_NAME",
+            "fieldType": "AUDIT_FIELDS"
+        },
+        {
+            "id": "0a2a1f2e-9dfd-11cb-819e-019c61b904dc",
+            "name": "descriere",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "fe67302d-49f0-11f1-b85d-7f6244a9c4b7",
+            "property": "VALUE",
+            "sourceFormTemplateId": "fe767271-49f0-11f1-b85d-71f080e21dfa"
+        },
+        {
+            "id": "0a2a1f2e-9dfd-11cb-819e-019c61b904dd",
+            "name": "observatii",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "fe6dbfdf-49f0-11f1-b85d-733dfefe67e7",
+            "property": "VALUE",
+            "sourceFormTemplateId": "fe767271-49f0-11f1-b85d-71f080e21dfa"
+        },
+        {
+            "id": "0a2a1f2e-9dfd-11cb-819e-019c61b904de",
+            "name": "categorie",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "fe61fffd-49f0-11f1-b85d-d17db9cb1e1a",
+            "property": "VALUE",
+            "sourceFormTemplateId": "fe767271-49f0-11f1-b85d-71f080e21dfa"
+        },
+        {
+            "id": "0a2a1f2e-9dfd-11cb-819e-019c61b904df",
+            "name": "titluSesizare",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "fe63d4cb-49f0-11f1-b85d-0ba3efd352cc",
+            "property": "VALUE",
+            "sourceFormTemplateId": "fe767271-49f0-11f1-b85d-71f080e21dfa"
+        },
+        {
+            "id": "0a2a1f2e-9dfd-11cb-819e-019c61b904e0",
+            "name": "locatie",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "fe65827c-49f0-11f1-b85d-01dd6dfd4e04",
+            "property": "ADDRESS",
+            "sourceFormTemplateId": "fe767271-49f0-11f1-b85d-71f080e21dfa"
+        }
+    ],
+    "editable": true
+}
