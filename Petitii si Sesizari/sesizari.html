@@ -477,7 +477,7 @@
 
           <div style="flex: 1"></div>
 
-          <!-- Data + Semnătura -->
+          <!-- Data + Telefon + Subsemnatul -->
           <div
             class="form-row"
             style="justify-content: space-between; margin-top: 40px"
@@ -489,9 +489,15 @@
               </div>
             </div>
             <div class="field-line mb0">
-              <span class="field-label" style="font-weight: 600">Semnătura</span>
+              <span class="field-label" style="font-weight: 600">Telefon</span>
               <div class="field-input w150">
-                <span class="value"></span>
+                <span class="value" th:text="${telefon} ?: ''"></span>
+              </div>
+            </div>
+            <div class="field-line mb0">
+              <span class="field-label" style="font-weight: 600">Subsemnatul</span>
+              <div class="field-input w180">
+                <span class="value" th:text="${subsemnatul} ?: ''"></span>
               </div>
             </div>
           </div>
