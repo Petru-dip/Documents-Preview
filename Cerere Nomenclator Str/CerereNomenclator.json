@@ -1,0 +1,494 @@
+{
+    "beneficiaryId": "petru",
+    "createdAt": "2026-05-08T09:23:28.062+00:00",
+    "updatedAt": "2026-05-08T09:23:39.219+00:00",
+    "createdBy": "117",
+    "lastModifiedBy": "117",
+    "id": "925ec7fb-4abf-11f1-8759-a7048cb6a953",
+    "category": "REQUEST_FORM",
+    "templateKey": "aee6ee89-4b1f-42a6-b38a-824d73f89c6f",
+    "name": "Cerere privind eliberarea certificatului de nomenclatură stradală-preview",
+    "description": "",
+    "title": "Cerere nomenclator stradal",
+    "subTitle": "Cerere nomenclator stradal",
+    "status": "INACTIVE",
+    "sections": [
+        {
+            "id": "716e911c-d207-4e3c-9584-4b7a831d1ce1",
+            "order": 0,
+            "title": "Detalii solicitant",
+            "fields": [
+                {
+                    "id": "924859b9-4abf-11f1-8759-3f33120df89b",
+                    "fieldKey": "ab70b2e2-4abd-11f1-b85d-c7d45604f512",
+                    "label": "Nume și Prenume",
+                    "fieldType": "ACCOUNT",
+                    "title": "Nume și Prenume",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "accountType": "CITIZEN"
+                },
+                {
+                    "id": "9249e05a-4abf-11f1-8759-e318dd1b1fc5",
+                    "fieldKey": "7e50ef31-eefa-4244-8d56-65c9cd9a535a",
+                    "label": "În calitate de",
+                    "fieldType": "DROPDOWN",
+                    "title": "În calitate de ",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "options": [
+                        {
+                            "id": null,
+                            "value": "proprietar",
+                            "icon": "",
+                            "name": "proprietar",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "coproprietar",
+                            "icon": "",
+                            "name": "coproprietar",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "mandatar",
+                            "icon": "",
+                            "name": "mandatar",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "moștenitor",
+                            "icon": "",
+                            "name": "moștenitor",
+                            "parentId": null,
+                            "options": null
+                        }
+                    ],
+                    "includeOthers": false,
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": true,
+                    "aiAutoFillPrompt": "extrage din document daca emitentul este proprietarul, coproprietarul, mandatorul sau mostenitorul. Doar daca este mentionat in document"
+                },
+                {
+                    "id": "924b3fef-4abf-11f1-8759-2b80e3830846",
+                    "fieldKey": "08bdfc06-b73d-41fd-942b-23d789341ca5",
+                    "label": "Domiciliu",
+                    "fieldType": "POINT",
+                    "title": "Domiciliu",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "isDefaultToCurrentLocation": false
+                },
+                {
+                    "id": "924c9f80-4abf-11f1-8759-0d26d014a1ba",
+                    "fieldKey": "a5ac2f66-58be-406e-b541-448e1a85cdaa",
+                    "label": "CNP",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "CNP",
+                    "description": "",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": true,
+                    "aiAutoFillPrompt": "Extrage CNP-ul (codul numeric personal) persoanei din documentul atașat și returnează doar seria numerică de 13 cifre, fără text suplimentar.",
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": ""
+                },
+                {
+                    "id": "924dd801-4abf-11f1-8759-8bb20316057d",
+                    "fieldKey": "cdb6aa82-b1cd-4d40-a96c-fc7da4fbee58",
+                    "label": "Act de identitate",
+                    "fieldType": "DROPDOWN",
+                    "title": "Act de identitate",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "options": [
+                        {
+                            "id": null,
+                            "value": "Carte de identitate",
+                            "icon": "",
+                            "name": "Carte de identitate",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Buletin de identitate",
+                            "icon": "",
+                            "name": "Buletin de identitate",
+                            "parentId": null,
+                            "options": null
+                        },
+                        {
+                            "id": null,
+                            "value": "Pașaport",
+                            "icon": "",
+                            "name": "Pașaport",
+                            "parentId": null,
+                            "options": null
+                        }
+                    ],
+                    "includeOthers": false,
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": true,
+                    "aiAutoFillPrompt": "Identifică tipul actului de identitate din documentul atașat (ex: carte de identitate, pașaport, buletin de identitate) și selecteaza categoria aferenta"
+                },
+                {
+                    "id": "924f3795-4abf-11f1-8759-c738dbe5b885",
+                    "fieldKey": "60fe103b-86ed-4bec-b6fc-b7d99480f611",
+                    "label": "Seria",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Seria",
+                    "description": "",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": true,
+                    "aiAutoFillPrompt": "Extrage seria actului de identitate din documentul atașat și returnează doar seria exact așa cum apare în document, fără text suplimentar.",
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": ""
+                },
+                {
+                    "id": "92509726-4abf-11f1-8759-631e8853caf2",
+                    "fieldKey": "22113d8d-7ee2-43f6-afc1-b374bd13f70a",
+                    "label": "Nr.",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Nr.",
+                    "description": "",
+                    "isRequired": true,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": true,
+                    "aiAutoFillPrompt": "Extrage numărul actului de identitate din documentul atașat și returnează doar numărul exact așa cum apare în document, fără text suplimentar.",
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": ""
+                },
+                {
+                    "id": "92521dc7-4abf-11f1-8759-5d7e287b0f6f",
+                    "fieldKey": "07715114-1aab-4e36-89f7-9611c21ed538",
+                    "label": "Număr de telefon",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Număr de telefon",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": false,
+                    "aiAutoFillPrompt": "",
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": ""
+                },
+                {
+                    "id": "92537d58-4abf-11f1-8759-b7cc84a91bfd",
+                    "fieldKey": "dd1ae9e2-21ab-4068-baa9-623945f06f55",
+                    "label": "Adresa de e-mail",
+                    "fieldType": "EMAIL_ADDRESS",
+                    "title": "Adresa de e-mail",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": false,
+                    "aiAutoFillPrompt": "",
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": ""
+                }
+            ]
+        },
+        {
+            "id": "a944a9d7-f9e5-4a2d-8d85-52e9f06bd6be",
+            "order": 1,
+            "title": " Detalii imobil pentru care se face cererea",
+            "fields": [
+                {
+                    "id": "925774f9-4abf-11f1-8759-b5d5922eec5e",
+                    "fieldKey": "a54ec75a-834f-44d9-b39a-83391d85dfaa",
+                    "label": "Adresa",
+                    "fieldType": "POINT",
+                    "title": "Adresa",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "isDefaultToCurrentLocation": false
+                },
+                {
+                    "id": "9258d48a-4abf-11f1-8759-2130b023a75f",
+                    "fieldKey": "aae6c3fc-8141-40e2-943b-487c0d3c99de",
+                    "label": "Necesar la:",
+                    "fieldType": "LONG_ANSWER",
+                    "title": "Necesar la:",
+                    "description": "",
+                    "isRequired": false,
+                    "validations": [],
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": true,
+                    "aiAutoFillPrompt": "Extrage motivul sau justificare pentru care se cere acest document",
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": ""
+                }
+            ]
+        },
+        {
+            "id": "594314d5-c63e-4d1d-b2dc-b05f09765b50",
+            "order": 2,
+            "title": "Anexe",
+            "fields": null
+        }
+    ],
+    "otherRequirementSection": {
+        "id": "f72f322b-c6b3-4139-b748-00f43b59458c",
+        "order": 0,
+        "title": "",
+        "fields": null
+    },
+    "headerConfig": {
+        "show": true
+    },
+    "footerConfig": {
+        "show": true
+    },
+    "variableConfigs": [
+        {
+            "name": "beneficiaryName",
+            "type": "SYSTEM_FIELD",
+            "field": "BRANDING_OFFICIAL_NAME",
+            "fieldType": "BENEFICIARY_DETAILS"
+        },
+        {
+            "name": "beneficiaryAddress",
+            "type": "SYSTEM_FIELD",
+            "field": "BRANDING_ADDRESS",
+            "fieldType": "BENEFICIARY_DETAILS"
+        },
+        {
+            "name": "beneficiaryLogo",
+            "type": "SYSTEM_FIELD",
+            "field": "BRANDING_LOGO_URL",
+            "fieldType": "BENEFICIARY_DETAILS"
+        },
+        {
+            "name": "beneficiaryFiscalId",
+            "type": "SYSTEM_FIELD",
+            "field": "BRANDING_FISCAL_CODE",
+            "fieldType": "BENEFICIARY_DETAILS"
+        },
+        {
+            "name": "inputQrImage",
+            "type": "SYSTEM_FIELD",
+            "field": "INPUT_REGISTRATION_QR_CODE",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "outputQrImage",
+            "type": "SYSTEM_FIELD",
+            "field": "OUTPUT_REGISTRATION_QR_CODE",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "outputRegistrationSeries",
+            "type": "SYSTEM_FIELD",
+            "field": "OUTPUT_REGISTRATION_SERIES",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "outputRegistrationNumber",
+            "type": "SYSTEM_FIELD",
+            "field": "OUTPUT_REGISTRATION_NUMBER",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "outputRegistrationDate",
+            "type": "SYSTEM_FIELD",
+            "field": "OUTPUT_REGISTRATION_DATE",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "inputRegistrationSeries",
+            "type": "SYSTEM_FIELD",
+            "field": "INPUT_REGISTRATION_SERIES",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "inputRegistrationNumber",
+            "type": "SYSTEM_FIELD",
+            "field": "INPUT_REGISTRATION_NUMBER",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "inputRegistrationDate",
+            "type": "SYSTEM_FIELD",
+            "field": "INPUT_REGISTRATION_DATE",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "name": "registeredByDepartment",
+            "type": "SYSTEM_FIELD",
+            "field": "CREATED_BY_DEPARTMENT_NAME",
+            "fieldType": "AUDIT_FIELDS"
+        },
+        {
+            "name": "subsemnatul",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "924859b9-4abf-11f1-8759-3f33120df89b",
+            "property": "VALUE",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "name": "calitate",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "9249e05a-4abf-11f1-8759-e318dd1b1fc5",
+            "property": "VALUE",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "name": "domiciliu",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "924b3fef-4abf-11f1-8759-2b80e3830846",
+            "property": "VALUE",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "name": "cnp",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "924c9f80-4abf-11f1-8759-0d26d014a1ba",
+            "property": "VALUE",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "name": "tip_act",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "924dd801-4abf-11f1-8759-8bb20316057d",
+            "property": "VALUE",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "name": "seria",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "924f3795-4abf-11f1-8759-c738dbe5b885",
+            "property": "VALUE",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "name": "nr_act",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "92509726-4abf-11f1-8759-631e8853caf2",
+            "property": "VALUE",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "name": "telefon",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "92521dc7-4abf-11f1-8759-5d7e287b0f6f",
+            "property": "VALUE",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "name": "email",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "92537d58-4abf-11f1-8759-b7cc84a91bfd",
+            "property": "VALUE",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "name": "adresa_imobil",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "925774f9-4abf-11f1-8759-b5d5922eec5e",
+            "property": "VALUE",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "name": "necesar_la",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "9258d48a-4abf-11f1-8759-2130b023a75f",
+            "property": "VALUE",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        }
+    ],
+    "aiAutoFill": {
+        "id": "d41f7c6b-9893-46eb-af57-5cea3f7850ff",
+        "enabled": true,
+        "uploadModal": {
+            "title": "Accesează completarea asistată",
+            "description": "Încarcă cererea fizică sau documente de identificare pentru a completa automat datele"
+        }
+    },
+    "editable": false
+}

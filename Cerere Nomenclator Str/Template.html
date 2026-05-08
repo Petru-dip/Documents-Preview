@@ -2,7 +2,7 @@
 <html lang="ro" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
-    <title>Cerere eliberare anchetă socială</title>
+    <title>Cerere privind eliberarea certificatului de nomenclatură stradală</title>
     <style>
       * {
         margin: 0;
@@ -370,7 +370,7 @@
               >
                 <span class="chip output">
                   <img
-                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0Ljk2MjkgNi43NDk4QzE0LjU4NjEgMi45NjE2IDExLjM4NjggLTEuNjk4OThlLTA3IDcuNSAwQzMuMzYgMS44MDk2NWUtMDcgMCAzLjM2IDAgNy41QzAgMTEuNjQgMy4zNiAxNSA3LjUgMTVDMTEuMzg3IDE1IDE0LjU4NjQgMTIuMDM4MiAxNC45NjI5IDguMjQ5NzlINi42MjI4NUw4Ljc4Mjg1IDEwLjQwOThDOS4wNzUzNSAxMC43MDIzIDkuMDc1MzUgMTEuMTgyMyA4Ljc4Mjg1IDExLjQ3NDhDOC40OTAzNSAxMS43NjczIDguMDE3ODUgMTEuNzY3MyA3LjcyNTM1IDExLjQ3NDhMNC4yODI4NSA4LjAzMjNDMy45OTAzNSA3LjczOTc5IDMuOTkwMzUgNy4yNjcyOSA0LjI4Mjg1IDYuOTc0NzlMNy43MTc4NSAzLjUyNDhDOC4wMTAzNSAzLjIzMjI5IDguNDgyODUgMy4yMzIyOSA4Ljc3NTM1IDMuNTI0NzlDOS4wNjc4NSAzLjgxNzI5IDkuMDY3ODUgNC4yODk4IDguNzc1MzUgNC41ODIzTDYuNjIyODUgNi43NDk4SDE0Ljk2MjlaIiBmaWxsPSIjZWZmMGY0Ii8+Cjwvc3ZnPgo="
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0Ljk2MjkgNi43NDk4QzE0LjU4NjEgMi45NjE2IDExLjM4NjggLTEuNjk4OThlLTA3IDcuNSAwQzMuMzYgMS44MDk2NWUtMDcgMCAzLjM2IDAgNy41QzAgMTEuNjQgMy4zNiAxNSA3LjUgMTVDMTEuMzg3IDE1IDE0LjU4NjQgMTIuMDM4MiAxNC45NjI5IDguMjQ5NzlINi42MjI4NUw4Ljc4Mjg1IDEwLjQwOThDOS4wNzUzNSAxMC43MDIzIDkuMDc1MzUgMTEuMTgyMyA4Ljc4Mjg1IDExLjQ3NDhDOC40OTAzNSAxMS43NjczIDguMDE3ODUgMTEuNzY3MyA3LjcyNTM1IDExLjQ3NDhMNC4yODI4NSA4LjAzMjNDMy45OTAzNSA3LjczOTc5IDMuOTkwMzUgNy4yNjcyOSA0LjI4Mjg1IDYuOTc0NzlMNy43MTc4NSAzLjUyNDhDOC4wMTAzNSAzLjIzMjI5IDguNDgyODUgMy4yMzIyOSA4Ljc3NTM1IDMuNTI0NzlDOS4wNjc4NSAzLjgxNzI5IDkuMDc3ODUgNC4yODk4IDguNzc1MzUgNC41ODIzTDYuNjIyODUgNi43NDk4SDE0Ljk2MjlaIiBmaWxsPSIjZWZmMGY0Ii8+Cjwvc3ZnPgo="
                   />
                   <p>
                     <span
@@ -395,66 +395,107 @@
         </div>
 
         <div class="doc-content">
-          <!-- TITLE: DOMNULE PRIMAR -->
+          <!-- TITLE -->
           <div class="doc-title">
             <h1>DOMNULE PRIMAR</h1>
           </div>
 
-          <!-- Row 1: Subsemnatul(a) ... domiciliat -->
+          <!-- Rând 1: Subsemnatul + în calitate de -->
           <div class="form-row">
             <div class="field-line flex1 mb0">
               <span class="field-label">Subsemnatul(a)</span>
               <div class="field-input">
                 <span class="value" th:text="${subsemnatul} ?: ''"></span>
               </div>
-              <span class="field-label"> domiciliat</span>
+              <span class="field-label">, în calitate de</span>
+              <div class="field-input w120">
+                <span class="value" th:text="${calitate} ?: ''"></span>
+              </div>
             </div>
           </div>
 
-          <!-- Row 2: în satul ... comuna ... județul ... -->
+          <!-- Rând 2: domiciliat în -->
           <div class="form-row">
             <div class="field-line flex1 mb0">
-              <span class="field-label">în localitatea</span>
+              <span class="field-label">domiciliat(ă) în</span>
               <div class="field-input">
-                <span class="value" th:text="${localitatea} ?: ''"></span>
-              </div>
-              <span class="field-label"> comuna</span>
-              <div class="field-input">
-                <span class="value" th:text="${comuna} ?: ''"></span>
-              </div>
-              <span class="field-label"> județul</span>
-              <div class="field-input">
-                <span class="value" th:text="${judetul} ?: ''"></span>
+                <span class="value" th:text="${domiciliu} ?: ''"></span>
               </div>
             </div>
           </div>
 
-          <!-- Row 3: vă rog să-mi aprobați ... necesară la -->
+          <!-- Rând 3: posesor al + tip act + seria + nr -->
           <div class="form-row">
             <div class="field-line flex1 mb0">
-              <span class="field-label"
-                >vă rog să-mi aprobați efectuarea unei anchete sociale fiindu-mi
-                necesară la</span
-              >
-            </div>
-          </div>
-
-          <!-- Row 4: motiv ancheta (full width) -->
-          <div class="form-row">
-            <div class="field-line flex1 mb0">
-              <div
-                class="field-input"
-                style="min-height: 60px; align-items: flex-start"
-              >
-                <span class="value" th:text="${motiv_ancheta} ?: ''"></span>
+              <span class="field-label">posesor al</span>
+              <div class="field-input w150">
+                <span class="value" th:text="${tip_act} ?: ''"></span>
+              </div>
+              <span class="field-label">, seria</span>
+              <div class="field-input w80">
+                <span class="value" th:text="${seria} ?: ''"></span>
+              </div>
+              <span class="field-label">, nr.</span>
+              <div class="field-input w100">
+                <span class="value" th:text="${nr_act} ?: ''"></span>
               </div>
             </div>
           </div>
 
-          <!-- Spacer to push Data/Semnatura down -->
+          <!-- Rând 4: CNP + telefon + email -->
+          <div class="form-row">
+            <div class="field-line flex1 mb0">
+              <span class="field-label">CNP</span>
+              <div class="field-input w150">
+                <span class="value" th:text="${cnp} ?: ''"></span>
+              </div>
+              <span class="field-label">, telefon</span>
+              <div class="field-input w120">
+                <span class="value" th:text="${telefon} ?: ''"></span>
+              </div>
+              <span class="field-label">, e-mail</span>
+              <div class="field-input">
+                <span class="value" th:text="${email} ?: ''"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text static cerere -->
+          <div class="form-row mt8">
+            <div class="field-line flex1 mb0">
+              <span class="field-label">vă rog să-mi eliberați <strong>Certificatul de nomenclatură stradală și numărul poștal</strong> pentru imobilul situat la adresa:</span>
+            </div>
+          </div>
+
+          <!-- Rând adresa imobilului -->
+          <div class="form-row">
+            <div class="field-line flex1 mb0">
+              <div class="field-input" style="min-height: 44px; align-items: flex-start">
+                <span class="value" th:text="${adresa_imobil} ?: ''"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text static necesar la -->
+          <div class="form-row mt8">
+            <div class="field-line flex1 mb0">
+              <span class="field-label">Certificatul de nomenclatură stradală este necesar la:</span>
+            </div>
+          </div>
+
+          <!-- Rând necesar la -->
+          <div class="form-row">
+            <div class="field-line flex1 mb0">
+              <div class="field-input" style="min-height: 60px; align-items: flex-start">
+                <span class="value" th:text="${necesar_la} ?: ''"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spacer -->
           <div style="flex: 1"></div>
 
-          <!-- Data + Semnătura row -->
+          <!-- Data + Semnătura -->
           <div
             class="form-row"
             style="justify-content: space-between; margin-top: 40px"
@@ -476,10 +517,10 @@
           </div>
         </div>
 
-        <!-- FOOTER (last page, no page number) -->
+        <!-- FOOTER -->
         <footer class="doc-footer avoid-break">
           <div class="footer-notes">
-            <p>Cerere eliberare anchetă socială</p>
+            <p>Cerere privind eliberarea certificatului de nomenclatură stradală</p>
           </div>
         </footer>
       </article>
