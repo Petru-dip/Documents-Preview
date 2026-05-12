@@ -1,7 +1,7 @@
 {
     "beneficiaryId": "petru",
     "createdAt": "2026-05-08T09:23:28.062+00:00",
-    "updatedAt": "2026-05-08T09:23:39.219+00:00",
+    "updatedAt": "2026-05-12T06:54:39.944+00:00",
     "createdBy": "117",
     "lastModifiedBy": "117",
     "id": "925ec7fb-4abf-11f1-8759-a7048cb6a953",
@@ -19,15 +19,26 @@
             "title": "Detalii solicitant",
             "fields": [
                 {
-                    "id": "924859b9-4abf-11f1-8759-3f33120df89b",
-                    "fieldKey": "ab70b2e2-4abd-11f1-b85d-c7d45604f512",
-                    "label": "Nume și Prenume",
-                    "fieldType": "ACCOUNT",
-                    "title": "Nume și Prenume",
+                    "id": "64a96cd4-4dcf-11f1-b85d-ed3ecd346485",
+                    "fieldKey": "64a96cd4-4dcf-11f1-b85d-ed3ecd346485",
+                    "label": "Subsemnatul",
+                    "fieldType": "SHORT_ANSWER_TEXT",
+                    "title": "Subsemnatul",
                     "description": "",
                     "isRequired": false,
                     "validations": [],
-                    "accountType": "CITIZEN"
+                    "toolTip": {
+                        "icon": "",
+                        "toolTipText": "",
+                        "shortText": ""
+                    },
+                    "isDisabled": false,
+                    "isReadOnly": false,
+                    "aiAutoFill": true,
+                    "aiAutoFillPrompt": "Din imaginea cărții de identitate, extrage NUME și PRENUME. Răspunde doar cu nume si prenume",
+                    "maximumLength": 100,
+                    "minimumLength": 0,
+                    "placeHolder": "Subsemnatul"
                 },
                 {
                     "id": "9249e05a-4abf-11f1-8759-e318dd1b1fc5",
@@ -229,8 +240,8 @@
                     },
                     "isDisabled": false,
                     "isReadOnly": false,
-                    "aiAutoFill": false,
-                    "aiAutoFillPrompt": "",
+                    "aiAutoFill": true,
+                    "aiAutoFillPrompt": "Extrage numarul de telefon, daca se gaseste pe documentele incarcate. Acesta are 10 cifre si de regula incepe cu 07...",
                     "maximumLength": 100,
                     "minimumLength": 0,
                     "placeHolder": ""
@@ -314,10 +325,16 @@
         }
     ],
     "otherRequirementSection": {
-        "id": "f72f322b-c6b3-4139-b748-00f43b59458c",
+        "id": "c88c838f-4091-48a3-acf3-f50ec5ab90fe",
         "order": 0,
         "title": "",
         "fields": null
+    },
+    "fileDetail": {
+        "id": "1543f3ea-0cd4-4be7-b7ee-f5f8286331dc",
+        "filePath": "beneficiaries/petru/form-templates/925ec7fb-4abf-11f1-8759-a7048cb6a953/file-detail/template_2026-05-12_06-29-01.html",
+        "fileName": "template_2026-05-12_06-29-01.html",
+        "contentType": "text/html"
     },
     "headerConfig": {
         "show": true
@@ -327,91 +344,124 @@
     },
     "variableConfigs": [
         {
+            "id": "0a2a875c-9dfd-121c-819e-1ad2ad990bc2",
+            "name": "domiciliu",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "924b3fef-4abf-11f1-8759-2b80e3830846",
+            "property": "ADDRESS",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "id": "0a2a875c-9dfd-121c-819e-1ad2ad990bc3",
+            "name": "adresa_imobil",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "925774f9-4abf-11f1-8759-b5d5922eec5e",
+            "property": "ADDRESS",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "id": "0a2a1f2e-9dfd-11cb-819e-1adfe47715c1",
+            "name": "subsemnatul",
+            "type": "TEMPLATE_FIELD",
+            "fieldId": "64a96cd4-4dcf-11f1-b85d-ed3ecd346485",
+            "property": "VALUE",
+            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+        },
+        {
+            "id": "0a2a875c-9dfd-121c-819e-075f50e80553",
             "name": "beneficiaryName",
             "type": "SYSTEM_FIELD",
             "field": "BRANDING_OFFICIAL_NAME",
             "fieldType": "BENEFICIARY_DETAILS"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-075f50e80554",
             "name": "beneficiaryAddress",
             "type": "SYSTEM_FIELD",
             "field": "BRANDING_ADDRESS",
             "fieldType": "BENEFICIARY_DETAILS"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-075f50e80555",
             "name": "beneficiaryLogo",
             "type": "SYSTEM_FIELD",
             "field": "BRANDING_LOGO_URL",
             "fieldType": "BENEFICIARY_DETAILS"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-075f50e80556",
             "name": "beneficiaryFiscalId",
             "type": "SYSTEM_FIELD",
             "field": "BRANDING_FISCAL_CODE",
             "fieldType": "BENEFICIARY_DETAILS"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-075f50e80557",
             "name": "inputQrImage",
             "type": "SYSTEM_FIELD",
             "field": "INPUT_REGISTRATION_QR_CODE",
             "fieldType": "REGISTRATION_DETAILS"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-075f50e80558",
             "name": "outputQrImage",
             "type": "SYSTEM_FIELD",
             "field": "OUTPUT_REGISTRATION_QR_CODE",
             "fieldType": "REGISTRATION_DETAILS"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-075f50e80559",
             "name": "outputRegistrationSeries",
             "type": "SYSTEM_FIELD",
             "field": "OUTPUT_REGISTRATION_SERIES",
             "fieldType": "REGISTRATION_DETAILS"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-075f50e8055a",
             "name": "outputRegistrationNumber",
             "type": "SYSTEM_FIELD",
             "field": "OUTPUT_REGISTRATION_NUMBER",
             "fieldType": "REGISTRATION_DETAILS"
         },
         {
-            "name": "outputRegistrationDate",
-            "type": "SYSTEM_FIELD",
-            "field": "OUTPUT_REGISTRATION_DATE",
-            "fieldType": "REGISTRATION_DETAILS"
-        },
-        {
+            "id": "0a2a875c-9dfd-121c-819e-075f50e8055c",
             "name": "inputRegistrationSeries",
             "type": "SYSTEM_FIELD",
             "field": "INPUT_REGISTRATION_SERIES",
             "fieldType": "REGISTRATION_DETAILS"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-075f50e8055d",
             "name": "inputRegistrationNumber",
             "type": "SYSTEM_FIELD",
             "field": "INPUT_REGISTRATION_NUMBER",
             "fieldType": "REGISTRATION_DETAILS"
         },
         {
-            "name": "inputRegistrationDate",
-            "type": "SYSTEM_FIELD",
-            "field": "INPUT_REGISTRATION_DATE",
-            "fieldType": "REGISTRATION_DETAILS"
-        },
-        {
+            "id": "0a2a875c-9dfd-121c-819e-075f50e8055f",
             "name": "registeredByDepartment",
             "type": "SYSTEM_FIELD",
             "field": "CREATED_BY_DEPARTMENT_NAME",
             "fieldType": "AUDIT_FIELDS"
         },
         {
-            "name": "subsemnatul",
-            "type": "TEMPLATE_FIELD",
-            "fieldId": "924859b9-4abf-11f1-8759-3f33120df89b",
-            "property": "VALUE",
-            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
+            "id": "0a2a875c-9dfd-121c-819e-075f50e8055b",
+            "name": "outputRegistrationDate",
+            "type": "SYSTEM_FIELD",
+            "format": "dd-MM-yyyy",
+            "field": "OUTPUT_REGISTRATION_DATE",
+            "fieldType": "REGISTRATION_DETAILS"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-075f50e8055e",
+            "name": "inputRegistrationDate",
+            "type": "SYSTEM_FIELD",
+            "format": "dd-MM-yyyy",
+            "field": "INPUT_REGISTRATION_DATE",
+            "fieldType": "REGISTRATION_DETAILS"
+        },
+        {
+            "id": "0a2a875c-9dfd-121c-819e-076a3a400573",
             "name": "calitate",
             "type": "TEMPLATE_FIELD",
             "fieldId": "9249e05a-4abf-11f1-8759-e318dd1b1fc5",
@@ -419,13 +469,7 @@
             "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
         },
         {
-            "name": "domiciliu",
-            "type": "TEMPLATE_FIELD",
-            "fieldId": "924b3fef-4abf-11f1-8759-2b80e3830846",
-            "property": "VALUE",
-            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
-        },
-        {
+            "id": "0a2a875c-9dfd-121c-819e-076a3a400575",
             "name": "cnp",
             "type": "TEMPLATE_FIELD",
             "fieldId": "924c9f80-4abf-11f1-8759-0d26d014a1ba",
@@ -433,6 +477,7 @@
             "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-076a3a400576",
             "name": "tip_act",
             "type": "TEMPLATE_FIELD",
             "fieldId": "924dd801-4abf-11f1-8759-8bb20316057d",
@@ -440,6 +485,7 @@
             "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-076a3a410577",
             "name": "seria",
             "type": "TEMPLATE_FIELD",
             "fieldId": "924f3795-4abf-11f1-8759-c738dbe5b885",
@@ -447,6 +493,7 @@
             "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-076a3a410578",
             "name": "nr_act",
             "type": "TEMPLATE_FIELD",
             "fieldId": "92509726-4abf-11f1-8759-631e8853caf2",
@@ -454,6 +501,7 @@
             "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-076a3a410579",
             "name": "telefon",
             "type": "TEMPLATE_FIELD",
             "fieldId": "92521dc7-4abf-11f1-8759-5d7e287b0f6f",
@@ -461,6 +509,7 @@
             "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
         },
         {
+            "id": "0a2a875c-9dfd-121c-819e-076a3a41057a",
             "name": "email",
             "type": "TEMPLATE_FIELD",
             "fieldId": "92537d58-4abf-11f1-8759-b7cc84a91bfd",
@@ -468,13 +517,7 @@
             "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
         },
         {
-            "name": "adresa_imobil",
-            "type": "TEMPLATE_FIELD",
-            "fieldId": "925774f9-4abf-11f1-8759-b5d5922eec5e",
-            "property": "VALUE",
-            "sourceFormTemplateId": "925ec7fb-4abf-11f1-8759-a7048cb6a953"
-        },
-        {
+            "id": "0a2a875c-9dfd-121c-819e-076a3a41057c",
             "name": "necesar_la",
             "type": "TEMPLATE_FIELD",
             "fieldId": "9258d48a-4abf-11f1-8759-2130b023a75f",
@@ -483,12 +526,12 @@
         }
     ],
     "aiAutoFill": {
-        "id": "d41f7c6b-9893-46eb-af57-5cea3f7850ff",
+        "id": "508ee7df-f621-4b74-b9bc-498fd519b59c",
         "enabled": true,
         "uploadModal": {
-            "title": "Accesează completarea asistată",
+            "title": "ncarcă cartea de identitate pentru completare automată",
             "description": "Încarcă cererea fizică sau documente de identificare pentru a completa automat datele"
         }
     },
-    "editable": false
+    "editable": true
 }
